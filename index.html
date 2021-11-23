@@ -18,6 +18,9 @@
     html,
     body,
     header,
+    .navbar-fixed-top{ 
+      position:static;
+    }
     .carousel {
       height: 60vh;
     }
@@ -49,14 +52,15 @@
 <div
   class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
  
-  style="background-image: url('./img/Asset_10_double.png'); 
+  style="background-image: url('./img/Asset_10.png'); 
           background-size: cover;"
 >
   <h1 style="color: black; font-weight: bold; class=mb-3 h2">Go Fast Cyclomessagerie</h1>
   <br>
   <p style="color: black">
-    La cyclomessagerie faite par et pour des coursi.ères
+    La cyclomessagerie faite par et pour des coursier.ère.s
   </p>
+  <a href="tel:022-734-15-23" class="btn btn-warning btn-lg">022 734 15 23</a>
 </div>
 <!-- Jumbotron -->
 
@@ -64,7 +68,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-bottom navbar-expand-lg navbar-light white scrolling-navbar">
+  <nav class="navbar sticky-top topnav navbar-expand-lg navbar-light white scrolling-navbar">
     <div class="container">
 
 
@@ -303,9 +307,55 @@
       <!--Pagination-->
 
     </div>
-  </main>
-  <!--Main layout-->
 
+     <!--Main layout-->
+  <section class="text-center mb-4">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4">
+
+        <!--Card-->
+        <div class="card">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="./img/imman.png" class="card-img-top"
+              alt="">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+
+          <!--Card content-->
+          <div class="card-body text-center">
+            <!--Category & Title-->
+            <a href="" class="grey-text">
+              <h5>Imman</h5>
+            </a>
+            <h5>
+              <strong>
+                <a href="" class="dark-grey-text">Le visionaire
+                </a>
+              </strong>
+            </h5>
+
+          </div>
+          <!--Card content-->
+
+        </div>
+        <!--Card-->
+
+      </div>
+      <!--Grid column-->
+  </main>
+ 
+
+
+  </section>
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
