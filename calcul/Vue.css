@@ -1,0 +1,62 @@
+h1 {
+    color: #41b883;
+  }
+  
+  .well {
+    width: 555px;
+    padding-top: 0px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .well h3 {
+    color: rgba;
+    font-weight: bold;
+  }
+  
+  .well code {
+    color: rgba(0,0,0,.85);
+    background-color: rgba(255,255,255,.65);  
+  }
+  
+  .alert.alert-info {
+    background-color: #41b883;
+    color: white;  
+    font-size: 1.2em;
+  }
+  
+  p.comment {  
+    color: rgba(0,0,0,.75);
+    font-style: italic;    
+  }
+  
+  /** footer ***/
+  
+  .container-fluid {  
+    width: 100%;
+    margin: 10px 0;
+    clear: both;   
+  }
+  
+  .footer {
+    background-color: #1B1C1D;
+    padding: 10px 10px;;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    text-height: 40px;
+    
+    em {
+      color: #aaa;  
+    }
+    
+    a {
+      display: inline-block;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      padding: 10px;    
+      color: #ddd;
+      text-decoration: none;    
+    }
+  }

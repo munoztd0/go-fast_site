@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<script src="vue.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="vue.css" rel="stylesheet">
+
+<div id="app">
+    <div class="container">
+      <h1>
+        Price calculator
+        <small>Vue.js</small>
+      </h1>   
+      <p class="comment">with vue components</p>
+          
+      <div class="row">
+        <div class="col-xs-6">
+          <price label="Price" :value="price" @update="price=arguments[0]"></price>
+          <price label="Shipping" :value="shipping" @update="shipping=arguments[0]"></price>
+          <price label="Discount" :value="discount" @update="discount=arguments[0]"></price>
+          <div class="alert alert-info">
+            total: <strong>{{ total }}</strong>      
+          </div>    
+        </div>
+      </div>
+      
+      
+      <div class="well">
+        <h3>Logic</h3>
+        <p>
+       <code>total</code> = 
+       <code>price</code> + 
+        <code>shipping fee</code> - 
+        <code>discount</code>
+        </p>
+        <p>
+        IF <code>total</code> &lt; <code>shipping fee</code> THEN 
+        <code>total</code> = <code>shipping fee</code>
+          </p>
+    </div>
+    </div>    
+  </div>
+  
+  <template id="price-template">        
+    <div class="form-group">
+      <label>{{ label }}</label>
+      <input type="text" class="form-control" v-model.number="value" @change="update" placeholder="0">
+    </div>
+  </template>  
+  
+  <div class="container-fluid footer text-center">    
+    <p>A teljes cikket elolvashatod az ITHub-on. Klikkelj a logóra alább!</p>
+    <p><em>You can read the Hungarian full article on the ITHub. Click the logo below!</em></p>
+    <a href="https://github.hu/blog/post/Ismerkedes-a-Vuejs-keretrendszerrel---2-resz---Urlapok-komponensek/" target="ithub">
+      <img src="https://github.hu/images/ithub-logo-dark.png" alt="ithub logo" style="width: 85px; height: auto;">    
+    </a>  
+  </div>
+
+</html>
