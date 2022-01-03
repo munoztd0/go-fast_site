@@ -17,6 +17,18 @@ You are free to use the code in Commercial or non-commercial projects
  urg_prices["urgent"]=2;
  
 
+ var dist_prices1= new Array();
+ dist_prices1["None"]=0;
+ dist_prices1["1201"]=0;
+ dist_prices1["1"]=5;
+ dist_prices1["2"]=10;
+ dist_prices1["3"]=15;
+ dist_prices1["4"]=20;
+ dist_prices1["5"]=25;
+ dist_prices1["6"]=30;
+ dist_prices1["7"]=35;
+ dist_prices1["8"]=40;
+
  var poids_prices= new Array();
  poids_prices["None"]=0;
  poids_prices["0"]=0;
@@ -40,10 +52,9 @@ function getTypePrice()
     var typePrice=0;
     //Get a reference to the form id="cakeform"
     var theForm = document.forms["courseform"];
-    //Get a reference to the course the user Chooses name=selectedcourse":
+    //Get a reference to the course the user Chooses name=selectedtype":
     var selectedType = theForm.elements["selectedtype"];
     // var selectedType theForm.elements["selectedtype"];
-    //Here since there are 4 radio buttons selectedcourse.length = 4
     //We loop through each radio buttons
     for(var i = 0; i < selectedType.length; i++)
     {
@@ -51,10 +62,9 @@ function getTypePrice()
         if(selectedType[i].checked)
         {
             //we set TypePrice to the value of the selected radio button
-            //i.e. if the user choose the 8" course we set it to 25
             //by using the type_course array
             //We get the selected Items value
-            //For example type_course["Round8".value]"
+            //For example type_course["simple".value]"
             typePrice = type_course[selectedType[i].value];
             //If we get a match then we break out of this loop
             //No reason to continue if we get a match
@@ -73,12 +83,10 @@ function getTypePrice()
 function getUrgPrice()
 {  
     var UrgPrice=0;
-    //Get a reference to the form id="cakeform"
+    //Get a reference to the form id="courseform"
     var theForm = document.forms["courseform"];
-    //Get a reference to the course the user Chooses name=selectedcourse":
+    //Get a reference to the course the user Chooses name=selectedurg":
     var selectedUrg = theForm.elements["selectedurg"];
-    // var selectedUrg theForm.elements["selectedurg"];
-    //Here since there are 4 radio buttons selectedcourse.length = 4
     //We loop through each radio buttons
     for(var i = 0; i < selectedUrg.length; i++)
     {
@@ -86,10 +94,8 @@ function getUrgPrice()
         if(selectedUrg[i].checked)
         {
             //we set UrgPrice to the value of the selected radio button
-            //i.e. if the user choose the 8" course we set it to 25
             //by using the type_course array
             //We get the selected Items value
-            //For example type_course["Round8".value]"
             UrgPrice = urg_prices[selectedUrg[i].value];
             //If we get a match then we break out of this loop
             //No reason to continue if we get a match
@@ -100,7 +106,25 @@ function getUrgPrice()
     return UrgPrice;
 }
 
+//This function finds the poids price based on the 
+//drop down selection
+function getDistPrice()
+{
+    var DistPrice1=0;
+    var DistPrice2=0;
+    //Get a reference to the form id="courseform"
+    var theForm = document.forms["courseform"];
+    //Get a reference to the select id="distance"
+    var selectedDist1 = theForm.elements["distance1"];
+    var selectedDist2 = theForm.elements["distance3"];
+     
+    //set Poids Price equal to value user chose
+    DistPrice1 = dist_prices1[selectedDist1.value];
+    DistPrice2 = dist_prices2[selectedDist2.value];
 
+    //finally we return DistPrice
+    return DistPrice1 + DistPrice2;
+}
 
 
 //This function finds the poids price based on the 
@@ -108,54 +132,18 @@ function getUrgPrice()
 function getPoidsPrice()
 {
     var PoidsPrice=0;
-    //Get a reference to the form id="cakeform"
+    //Get a reference to the form id="courseform"
     var theForm = document.forms["courseform"];
     //Get a reference to the select id="poids"
      var selectedPoids = theForm.elements["poids"];
      
     //set Poids Price equal to value user chose
-    //For example poids_prices["Lemon".value] would be equal to 5
     PoidsPrice = poids_prices[selectedPoids.value];
 
     //finally we return PoidsPrice
     return PoidsPrice;
 }
 
-// //candlesPrice() finds the candles price based on a check box selection
-// function candlesPrice()
-// {
-//     var candlePrice=0;
-//     //Get a reference to the form id="cakeform"
-//     var theForm = document.forms["cakeform"];
-//     //Get a reference to the checkbox id="includecandles"
-//     var includeCandles = theForm.elements["includecandles"];
-
-//     //If they checked the box set candlePrice to 5
-//     if(includeCandles.checked==true)
-//     {
-//         candlePrice=5;
-//     }
-//     //finally we return the candlePrice
-//     return candlePrice;
-// }
-
-// function insciptionPrice()
-// {
-//     //This local variable will be used to decide whether or not to charge for the inscription
-//     //If the user checked the box this value will be 20
-//     //otherwise it will remain at 0
-//     var inscriptionPrice=0;
-//     //Get a refernce to the form id="cakeform"
-//     var theForm = document.forms["cakeform"];
-//     //Get a reference to the checkbox id="includeinscription"
-//     var includeInscription = theForm.elements["includeinscription"];
-//     //If they checked the box set inscriptionPrice to 20
-//     if(includeInscription.checked==true){
-//         inscriptionPrice=20;
-//     }
-//     //finally we return the inscriptionPrice
-//     return inscriptionPrice;
-// }
         
 function calculateTotal()
 {
@@ -175,3 +163,33 @@ function hideTotal()
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='none';
 }
+
+
+function highlight_map_states() {
+
+    if ($(".states_section").size() > 0) {
+
+        $(".states_section .list_states .item .link").hover(function () {
+            var a = "#state_" + $(this).text().toLowerCase();
+            $(a).attr("class", "state hover");
+        }, function () {
+            var a = "#state_" + $(this).text().toLowerCase();
+            $(a).attr("class", "state")
+        })
+    }
+};
+
+$(function() {
+    var $tooltip = $('.tooltip');
+
+    $('path, circle').click(function(e){
+        e.preventDefault();
+        var t = this.getBoundingClientRect().top,
+            l = this.getBoundingClientRect().left;
+        $tooltip.css({"top": t + "px", "left": l + "px"}).show();
+    });
+
+    $('desc, text').click(function(e){
+        e.preventDefault();
+    });
+});
