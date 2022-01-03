@@ -32,17 +32,15 @@ You are free to use the code in Commercial or non-commercial projects
  var poids_prices= new Array();
  poids_prices["None"]=0;
  poids_prices["0"]=0;
- poids_prices["1"]=5;
- poids_prices["2"]=10;
- poids_prices["3"]=15;
- poids_prices["4"]=20;
- poids_prices["5"]=25;
- poids_prices["6"]=30;
- poids_prices["7"]=35;
- poids_prices["8"]=40;
+ poids_prices["1"]=2;
+ poids_prices["2"]=4;
+ poids_prices["3"]=7;
+ poids_prices["4"]=10;
+ poids_prices["5"]=13;
+ poids_prices["6"]=15;
 
 
- 
+
 	 
 	 
 // getTypePrice() finds the price based on infos

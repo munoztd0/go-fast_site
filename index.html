@@ -178,7 +178,7 @@
               <br/>
 
               <label >Urgence de la course:</label>
-              <label class='radiolabel'><input type="radio"  name="selectedurg" value="rapide" onclick="calculateTotal()" />Rapide (1 heures)</label>  
+              <label class='radiolabel'><input type="radio"  name="selectedurg" value="rapide" onclick="calculateTotal()" />Rapide (1 heure)</label>  
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="urgent" onclick="calculateTotal()" />Urgent (30 minutes)</label><br/>
               <br/>
 
@@ -192,9 +192,7 @@
               <option value="3">4-5kg</option>
               <option value="4">5-6kg</option>
               <option value="5">6-7kg</option>
-              <option value="6">7-8kg</option>
-              <option value="7">8-9kg</option>
-              <option value="8">>10kg</option>
+              <option value="6">>7kg</option>
              </select>
               <!-- <br/>
               <p>
@@ -401,8 +399,7 @@
                 <a data-toggle="modal" href="#simple">
                   <h4>Course simple</h4>
                 </a>
-                <p>
-                </p>
+                <p>  </p>
                 <a data-toggle="modal" href="#simple" style="font-size: 23px">+</a>
               </div>
               <div class="col-lg-3 text-center">
@@ -412,7 +409,7 @@
                   <br><br>
                   <h4>Course cargo</h4>
                 </a>
-                <p>XXX</p>
+                <p></p>
                 <a data-toggle="modal" href="#cargo" style="font-size: 23px">+</a>
               </div>
               <div class="col-lg-3 text-center">
@@ -420,7 +417,7 @@
                 <a data-toggle="modal" href="#tourne">
                   <h4>Tournée à l'heure</h4>
                 </a>
-                <p>XXX</p>
+                <p></p>
                 <a data-toggle="modal" href="#tourne" style="font-size: 23px">+</a>
               </div>
             </div>
@@ -439,8 +436,7 @@
                 vôtre destinataire.
 
                 <br><br>
-                De 30min à 2h pour le centre-ville, de 45min à 2h30 pour les différents niveaux d'extérieurs 
-                au centre-ville.
+                De 30min à 1h pour le centre-ville, de 45min à 1h30 pour les différentes zones extérieures.
                 
                 <br><br>
                 
@@ -474,12 +470,17 @@
                 Comme preuve de la prise en charge et de livraison, 
                 vous recevrez automatiquement des photo des signatures sur votre adresse e-mail.
                 <br><br>
+                
               <!-- Sous réserve de remise immédiate de l’envoi chez l’expéditeur, nous vous garantissons 
               le temps d’exécution entre la réception de votre ordre téléphonique et la livraison 
               chez le destinataire. En cas de retard, le prix de la course est réduit de moitié.
              -->
               Go-fast cyclomessagerie répond aux éventuels dommages, causés entre la prise en charge 
-               de l'envoi et sa remise, jusqu'à un montant maximal de CHF 1'000.- </small>
+               de l'envoi et sa remise, jusqu'à un montant maximal de CHF 1'000.- 
+              
+              Toutefois, la résponsabilité de l'emballage du colis demeure à l'envoyeur.euse.  </small>
+
+              </small>
               <!--  Pour desIl est possible de conclure une assurance particulière. -->
               <br><br>
               </p>
@@ -1078,7 +1079,7 @@
                   <h4>Course simple</h4>
                   <br>
                   <p style="max-width: 600px" class="text-md-left">  
-                    Prix pour course simple, colis de petite taille (rentre dans grand sac à dos) et faisant moins de 2 kg.
+                    Prix pour course simple, colis de petite taille (rentre dans grand sac à dos ~ 50L) et faisant moins de 2 kg.
                   </p>
                   <div style="text-align: center">
                     <table class="table table-hover">
@@ -1108,6 +1109,8 @@
                         </tr>           
                       </tbody>
                     </table>
+                    <br>
+                    <img src="img/logo/simple.jpg" width="80%">
                     <br>
                       
                     <h6 style="max-width: 500px" class="text-md-left">Suppléments</h6>
@@ -1142,6 +1145,196 @@
         </div>
       </div>
   </center>
+
+
+  <!-- cargo -->
+  <center>
+    <div class="portfolio-modal modal fade" id="cargo" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class='modal__overlay'></div>
+      <div class='modal__content'>
+      <div class="modal-dialog h-100">
+        <div class="modal-content">
+          <span class="btn_close">
+            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+         </span>
+          <!-- <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="modal-body">
+                  <br>
+                  <i class="icon-cargo icon-4x services-cargo"></i>
+                  <br><br>
+                  
+                  <h4>Course cargo</h4>
+                  <br>
+                  <p style="max-width: 600px" class="text-md-left">  
+                  Prix pour la course cargo; colis lourd (à partir de 9kg) et/ou encombrant (n'entre pas dans le sac à dos > 50L)
+                  </p>
+                  <div style="text-align: center">
+                    <table class="table table-hover">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>Livraison</th>
+                          <th>À partir de<sup><span style="font-size:0.5em">*</sup></span></th>
+                          <th>Livraison garantie avant<sup><span style="font-size:0.5em">**</sup></span></th>
+                        </tr>
+                      </thead>
+                  
+                      <tbody>
+                        <tr>
+                          <th scope="row">Rapide</th>
+                          <td>30 CHF</td>
+                          <td>1 heure</td>
+                        </tr>
+                        <!-- <tr>
+                          <th scope="row">Rapide</th>
+                          <td>20 CHF</td>
+                          <td>1 heures</td>
+                        </tr>
+                        <tr> -->
+                          <th scope="row">Urgente</th>
+                          <td>60 CHF</td>
+                          <td>30 minutes</td>
+                        </tr>           
+                      </tbody>
+                    </table>
+
+                    <br>
+                    <img src="img/logo/bullitt.png" width="80%">
+                    <br>
+
+                    <h6 style="max-width: 500px" class="text-md-left">Suppléments</h6>
+                    <small>
+                    <ul style="max-width: 500px" class="text-md-left">
+                      <li>
+                        Attente (démarches administratives ou autre): Supplément de 1.00 CHF par
+                    minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
+                    soit présent à l'arrivée du/de la coursier.ère.
+                  </li>
+                  </ul>
+                   </small>
+
+                    <p style="max-width: 500px" class="text-md-left">  
+                      <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne 
+                        les livraisons de/vers le centre de Genève. Autres prix et destinations sur demande.</span>
+                        <br>
+                      <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps commence à partir de 
+                      l'heure à laquelle la livraison est prête.</span>
+                    </p>
+
+
+                    </div>
+                    <br><br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </center>
+
+
+    <!-- Tournee -->
+    <center>
+      <div class="portfolio-modal modal fade" id="tourne" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class='modal__overlay'></div>
+        <div class='modal__content'>
+        <div class="modal-dialog h-100">
+          <div class="modal-content">
+            <span class="btn_close">
+              <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+           </span>
+            <!-- <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div> -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-auto">
+                  <div class="modal-body">
+                    <br>
+                    <i class="fa fa-clock-o services-logo"></i>
+                    <br><br>
+                    
+                    <h4>Tournée à l'heure</h4>
+                    <br>
+                    <p style="max-width: 600px" class="text-md-left">  
+                      Il est possible de mettre en place un tarif horaire de CHF 55.- sur une suite d'adresses 
+                      conséquente, ex: une course à quatre destinataires ne peut pas être compté comme une tournée.
+                      <br><br>
+                      La mise en place d'une tournée à l'heure doit passée par mail ou par téléphone.
+                    </p>
+                    <!-- <div style="text-align: center">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>Livraison</th>
+                            <th>À partir de<sup><span style="font-size:0.5em">*</sup></span></th>
+                            <th>Livraison garantie avant<sup><span style="font-size:0.5em">**</sup></span></th>
+                          </tr>
+                        </thead>
+                    
+                        <tbody>
+                          <tr>
+                            <th scope="row">Rapide</th>
+                            <td>30 CHF</td>
+                            <td>1 heure</td>
+                          </tr> -->
+                          <!-- <tr>
+                            <th scope="row">Rapide</th>
+                            <td>20 CHF</td>
+                            <td>1 heures</td>
+                          </tr>
+                          <tr> -->
+                            <!-- <th scope="row">Urgente</th>
+                            <td>60 CHF</td>
+                            <td>30 minutes</td>
+                          </tr>           
+                        </tbody>
+                      </table>-->
+
+                      <br>
+                      <img src="img/logo/itinerary.png" width="80%">
+                      <br>
+
+                        
+                    <!-- <h6 style="max-width: 500px" class="text-md-left">Suppléments</h6>
+                      <small>
+                      <ul style="max-width: 500px" class="text-md-left">
+                        <li>
+                          Attente (démarches administratives ou autre): Supplément de 1.00 CHF par
+                      minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
+                      soit présent à l'arrivée du/de la coursier.ère.
+                    </li>
+                    </ul>
+                     </small>
+  
+                      <p style="max-width: 500px" class="text-md-left">  
+                        <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne 
+                          les livraisons de/vers le centre de Genève. Autres prix et destinations sur demande.</span>
+                          <br>
+                        <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps commence à partir de 
+                        l'heure à laquelle la livraison est prête.</span>
+                      </p> -->
+  
+  
+                      </div>
+                      <br><br><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </center>
 
 
   <!-- Data mining -->
