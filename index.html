@@ -120,7 +120,7 @@
         <i class="icon-Asset-17 home-icon "></i>
       </a>
       <a>
-        <i>Go-Fast Cyclomessagerie</i>
+        <i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Go-Fast Cyclomessagerie</i>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -167,10 +167,8 @@
   <header class="masthead">
     <div id="particles-js"></div>
     <div class="textlanding">
-    </br></br>
     <!-- <img width="150px" style="display:inline; margin-bottom: 20px; margin-right: 10px; margin-left: 10px"
     src="img/logo/Home_single_big.svg">  -->
-  </br>
       <p style="display:inline; font-size: 35px; padding-left: 30px">La cyclomessagerie faite par et pour les coursier.ère.s</p></br>
     </br>
 
@@ -180,14 +178,14 @@
       <p>Cyclomessagerie locale et solidaire</p>
 
       <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase">022 734 15 23   </a> </p>
-
+      <div class="arrowlanding">
+        <a class="js-scroll-trigger" href="#description">
+          <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
+        </a>
+      </div>
       <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Nos services</a> -->
     </div>
-    <div class="arrowlanding">
-      <a class="js-scroll-trigger" href="#description">
-        <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
-      </a>
-    </div>
+
   </header>
 
 
@@ -219,8 +217,13 @@
 
  <section id="description" class="bg-light">
   <div class="container">
-
-    <div id="wrap">
+    <div class="row">
+      <div class="col-md-5">
+      <video width="320" height="240" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="img/logo/test.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col-md-7 pull-right">
       <form action="" id="courseform" onsubmit="return false;">
       <div>
           <div class="cont_order">
@@ -263,7 +266,7 @@
               
               </fieldset>
           </div>
-          
+          </div>
         <!-- <div class="cont_details">
             <fieldset>
               <legend>Contact Details</legend>
@@ -281,7 +284,10 @@
           <!-- <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" /> -->
       </div>  
      </form>
-</div><!--End of wrap-->
+    </div>
+</div>
+
+<!--End of wrap-->
 
       
       <div class="row">
@@ -297,9 +303,7 @@
       </div>
 
       <center>
-      <video width="320" height="240" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="img/logo/test.mp4" type="video/mp4">
-      </video>
+      
     </center>
 
 
@@ -362,37 +366,10 @@
   <!-- =======================  SERVICES SECTION ======================= -->
   <style>
 
-    @font-face {
-      font-family: 'icomoon';
-      src:  url('fonts/icomoon.eot?cbewqk');
-      src:  url('fonts/icomoon.eot?cbewqk#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?cbewqk') format('truetype'),
-        url('fonts/icomoon.woff?cbewqk') format('woff'),
-        url('fonts/icomoon.svg?cbewqk#icomoon') format('svg');
-      font-weight: normal;
-      font-style: normal;
-      font-display: block;
+    #scroll-serv{
+        height: 300px;
+        overflow-y: scroll;
     }
-
-    [class^="icon-"], [class*=" icon-"] {
-      /* use !important to prevent issues with browser extensions that change fonts */ 
-      font-family: "FontAwesome";
-      speak: never;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-
-      /* Better Font Rendering =========== */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-
-    .icon-cargo:before {
-      content: "\e900";
-      }
       
     .centered { margin: auto; }
 
@@ -443,8 +420,8 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-lg-12 text-center" style="padding-bottom: 3%">
-          <p style="display:inline; font-size: 35px">Nos services en bref</p>
-          <br><br><br>
+      
+        <br><br>
           
           <div class="centered">
             <div class="row justify-content-center">
@@ -479,10 +456,12 @@
         </div>
       </div>
           <br><br><br>
-          <div class="container">
+          <div id="scroll-serv" class="container">
             <div class="row justify-content-md-center">
           <center>
             <div class="col-lg-8 text-center text-md-left bg-light">
+              <br>
+              <p style="display:inline; font-size: 35px">Nos services en bref</p>
               <p>
                 <br>
               <small> Partout sur le canton et jusqu'à Nyon, du lundi au vendredi, de 8h à 18h, par tous les temps nos
@@ -531,7 +510,7 @@
              -->
               Go-fast cyclomessagerie répond aux éventuels dommages, causés entre la prise en charge 
                de l'envoi et sa remise, jusqu'à un montant maximal de CHF 1'000.- 
-              
+              <br>
               Toutefois, la résponsabilité de l'emballage du colis demeure à l'envoyeur.euse.  </small>
 
               </small>
@@ -540,7 +519,7 @@
               </p>
             </div>
           </center>
-          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -1081,8 +1060,8 @@
   <footer>
      <!--Copyright-->
      <div class="footer-copyright py-3">
-      <small>Made by <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
-      </a> David Munoz Tord </small> 
+      <small>Made by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
+      </a> </small> 
         
       <!--/github account-->
     </div>
