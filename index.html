@@ -44,7 +44,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
-  <link href="css/calc.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -56,62 +56,42 @@
 
      <!-- CALC -->
   <script type="text/javascript" src="js/myfunc.js"></script>
+  
+  <!-- load special icons -->
+  <style>
+    @font-face {
+      font-family: 'icomoon';
+      src:  url('fonts/icomoon.eot?j5tn3a');
+      src:  url('fonts/icomoon.eot?j5tn3a#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?j5tn3a') format('truetype'),
+        url('fonts/icomoon.woff?j5tn3a') format('woff'),
+        url('fonts/icomoon.svg?j5tn3a#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    
+    [class^="icon-"], [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    </style>
 
 </head>
 
 <body id="page-top" onload='hideTotal()'></body>
-<style>
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?j5tn3a');
-  src:  url('fonts/icomoon.eot?j5tn3a#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?j5tn3a') format('truetype'),
-    url('fonts/icomoon.woff?j5tn3a') format('woff'),
-    url('fonts/icomoon.svg?j5tn3a#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-Asset-17:before {
-  content: "\e901";
-  outline: none;
-}
-.icon-cargo:before {
-  content: "\e900";
-  
-}
-
-.home-icon {
-      margin: 15px;
-      color: #69b3a2;
-      font-size: 45px;
-      outline: none;
-    }
-
-.home-icon:hover {
-  color: white;
-  background-color: #69b3a2;
-  outline: none;
-}
-
-
-</style>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
@@ -134,7 +114,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#intro">À propos</a>
+            <a class="nav-link js-scroll-trigger" href="about.html">À propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#news">News</a>
@@ -156,9 +136,6 @@
   </nav>
 
 
-<style>
-
-</style>
 
 
   <!-- =======================  LANDING SECTION ======================= -->
@@ -194,23 +171,6 @@
   <script src="js/appHome.js"></script>
 
 
-
-
-  <style>
-      .btn {
-        color: #69b3a2 !important;
-    }
-
-    section {
-      padding : 35px;
-    }
-
-  </style>
-
-  <script>
-
-
-  </script>
 
 
   <!-- =======================  DESCRIPTION SECTION ======================= -->
@@ -364,57 +324,7 @@
 
 
   <!-- =======================  SERVICES SECTION ======================= -->
-  <style>
-
-    #scroll-serv{
-        height: 300px;
-        overflow-y: scroll;
-    }
-      
-    .centered { margin: auto; }
-
-    .services-logo {
-      margin: 15px;
-      color: #69b3a2;
-      font-size: 45px;
-      padding: 30px;
-      border-radius: 50%;
-      border-color: black;
-      border-width: 5px;
-      border: solid;
-    }
-
-    .services-cargo {
-      margin: 15px;
-      color: #69b3a2;
-      font-size:90px;
-      padding: 13px;
-      border-radius: 50%;
-      border-color: black;
-      border-width: 5px;
-      border: solid;
-    }
-
-    .services-logo:hover {
-      color: white;
-      background-color: #69b3a2;
-    }
-
-    .services-cargo:hover {
-      color: white;
-      border-color: white;
-      background-color: #69b3a2;
-    }
-
-    .btn-primary:hover {    
-   color: white!important;
-    }
-
-    .list-inline-item:hover {    
-   color: white!important;
-    }
-
-  </style>
+  
 
   <section id="services" class="bg">
     <div class="container">
@@ -1017,45 +927,6 @@
 
 
 
-
-  <!-- ======================== MAP SECTION ============================ -->
-
-  <style>
-    /* Set the size of the div element that contains the map */
-    #map {
-      height: 300px;
-      /* The height is 400 pixels */
-      width: 100%;
-      /* The width is the width of the web page */
-      background-color: grey;
-      pointer-events: none;
-      opacity: 1
-
-    }
-
-  </style>
-  <!-- center: { lat:  46.2044, lng: 6.1432 } ° N, -->
-
-  <!--The div element for the map -->
-  <div id="map"></div>
-  <script>
-    var mymap = L.map('map').setView([46.2044,6.1432], 6);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
-    }).addTo(mymap);
-    var marker = L.marker([46.2044, 6.1432]).addTo(mymap);
-  </script>
-
-
-
-
-
-
   <!-- ======================= FOOTER SECTION ================================ -->
   <footer>
      <!--Copyright-->
@@ -1070,15 +941,6 @@
   </footer>
 
   <!-- ======================================================================= -->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1437,190 +1299,6 @@
 
 
 
-  <!-- Data viz -->
-  <!-- <center>
-    <div class="portfolio-modal modal fade" id="dataViz" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class='modal__overlay'></div>
-      <div class='modal__content'>
-      <div class="modal-dialog h-100">
-        <div class="modal-content">
-          <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-         </span>
-           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div> 
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <div class="modal-body">
-                  <i class="fa fa-bar-chart services-logo"></i>
-                  <h4>Data Visualization</h4>
-                  <p style="max-width: 600px">I'm an expert in the field of dataviz. 
-                    I've created several <a
-                      href="#website" target="_blank">websites</a> and given <a target="_blank"
-                      href="https://github.com/munoztd0/Talk">talks</a> on this topic. -->
-                    <!-- </p>
-                  <div style="text-align: left">
-                    <h6>I can help you with:</h6>
-                    <hr>
-                    <ul>
-                      <li>Creation and review of graphs for <u>scientific publication</u>.</li>
-                      <li>Development of <u>data application</u> using <code>R</code> and <code>Shiny</code>.</li>
-                      <li>Creation of custom <u>data visualization for the web.</li>
-                      <li><u>Dashboard</u> creation for real time data analysis.</li> 
-                      <li>Visualization of <u>spatial</u> data.</li>
-                    </ul> 
-                    <br>
-                    <h6>Example:</h6>
-                    <hr>
-                    <ul>
-                      <li>A <a href="https://munoztd0an.shinyapps.io/the-nb-como-project/">website</a> describing
-                        research results on mental disorders comorbidity.</li>
-                      <li><a href="https://www.data-to-viz.com">Data to viz</a>: a decision tree leading to the most
-                        appropriate chart type for your data.</li>
-                      <li>See many more examples in the <a href="#portofolio" target="_blank">portfolio</a> section of
-                        this website.</li> -->
-                    <!-- </ul>
-                    <br>
-                    <h6>Contact me</h6>
-                    <hr>
-                    <span>Tell me more about your project at <a
-                        href="mailto:david.munoztord@mailbox.org">david.munoztord@mailbox.org</a> to see if we can work
-                      together.</span>
-                    <div style="margin-top: 15px;">
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://github.com/munoztd0">Github</a>
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="mailto:david.munoztord@mailbox.org">Mail</a>
-                    </div>
-                    <br><br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </center> -->
-
-  <!-- Sensory Brain Mapping -->
-<!-- <center>
-  <div class="portfolio-modal modal fade" id="SBM" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class='modal__overlay'></div>
-    <div class='modal__content'>
-    <div class="modal-dialog h-100">
-      <div class="modal-content">
-        <span class="btn_close">
-          <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-       </span> -->
-        <!-- <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div> -->
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <div class="modal-body">
-                <img src="img/portfolio/brain_short.png" width="180">
-                <h4>Sensory Brain Mapping</h4>
-                <p style="max-width: 600px"></p>
-                <br><br>
-                <div style="text-align: left">
-                  <h6>Description</h6>
-                  <hr>
-                  <p>A group of researcher from the <a href="https://www.unige.ch/cisa/">
-                    Swiss Center of Affective Science</a> investigated the neuronal networks underlying 
-                    fundamental processes of taste perception.
-                  <p>I processed all the MRI data of 97 individuals to analyze and summarize the results in support of the paper intitled <a
-                      href="https://www.eneuro.org/content/8/5/ENEURO.0208-21.2021">3D-Printed Mouthpiece 
-                      for fMRI-Compatible Gustometers</a>.</p>
-                  <img src="img/portfolio/brain.png" style="width:100%;">
-                  <p>My work allowed to visualize the parameter distribution of the BOLD signal in 3D.</p>
-                  <h6>Read more</h6>
-                  <hr>
-                  <span>You can read the scientific paper on
-                    <a href="https://www.eneuro.org/content/8/5/ENEURO.0208-21.2021">eNeuro</a>. The source code
-                    of the project are of course on <a
-                      href="https://github.com/munoztd0/Mouthpiecegusto">Github</a>.</span>
-                  <div style="margin-top: 5px;">
-                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                      href="https://github.com/munoztd0/Mouthpiecegusto">Github</a>
-                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                      href="https://www.eneuro.org/content/8/5/ENEURO.0208-21.2021">Paper</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-     </div>
-   </div>
-  </div> 
-</center> -->
-
-
-
-  <!--  Bayesian Model Selection -->
-  <!-- <center>
-    <div class="portfolio-modal modal fade" id="BMS" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class='modal__overlay'></div>
-      <div class='modal__content'>
-      <div class="modal-dialog h-100">
-        <div class="modal-content">
-          <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-         </span> -->
-          <!-- <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div> -->
-          <!-- <div class="container">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <div class="modal-body">
-                  <img src="img/portfolio/fmriBMS_short.png" width="180px"></img>
-                  <h4>Voxel-wise Bayesian model selection.</h4>
-                  <p style="max-width: 600px">A technique to compare brain maps using Bayesian methods.</p>
-                  <br><br>
-                  <div style="text-align: left">
-                    <h6>Description</h6>
-                    <hr>
-                    <p>Building and comparing brain maps between several models is a common task for
-                      neuroscientist.</p>
-                    <p>Here we performed a Bayesian model selection (BMS) to select the best model given the data 
-                      for group-level analysis. This procedure computes the probability of the data given the model 
-                      (model evidence) for a set of candidate models. It also allows to compare characterize maps "heat zones" 
-                      and to visualize them. </p>
-                    <center><img src="img/portfolio/fmriBMS.png" width="80%"></img></center>
-                    <h6>Read more</h6>
-                    <hr>
-                    <span>You can read the scientific paper on <a
-                        href="https://www.biorxiv.org/content/10.1101/2021.05.02.442349v1.full.pdf">BiorXiv</a>.
-                      The source code of the project are on <a
-                        href="https://github.com/evapool/VS_AffectiveResponse">Github</a>.</span>
-                    <div style="margin-top: 5px;">
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://github.com/evapool/VS_AffectiveResponse">Github</a>
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://www.biorxiv.org/content/10.1101/2021.05.02.442349v1.full.pdf">Paper</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </center>  -->
-
-
-
 
   <!-- ======================================================================= -->
 
@@ -1670,6 +1348,3 @@
 </body>
 
 </html>
-
-
-font

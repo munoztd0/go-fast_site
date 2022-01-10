@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79254642-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-79254642-5');
+  </script> -->
+
+  <meta charset="utf-8">
+  <title>Go-Fast | Cyclomessagerie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Go-Fast Cyclomessagerie. La cyclomessagerie faite par et pour des coursier.ère.s">
+  <meta name="keywords"
+    content="Livraison,Vélocargo">
+  <meta name="author" content="Go-Fast | Cyclomessagerie">
+  <link rel="icon" href="img/logo/Home_single_small.jpg">
+
+  <!-- Control appearance when shared by social media -->
+  <meta property="og:title" content="Go-Fast | Cyclomessagerie" />
+  <meta property="og:image" content="img/logo/Home_single_small.jpg" />
+  <meta property="og:description"
+    content="La cyclomessagerie faite par et pour des coursier.ère.s" />
+  <meta property='og:url' content="https://www.go-fast.ch" />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+     <!-- CALC -->
+  <script type="text/javascript" src="js/myfunc.js"></script>
+  
+  <!-- load special icons -->
+  <style>
+    @font-face {
+      font-family: 'icomoon';
+      src:  url('fonts/icomoon.eot?j5tn3a');
+      src:  url('fonts/icomoon.eot?j5tn3a#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?j5tn3a') format('truetype'),
+        url('fonts/icomoon.woff?j5tn3a') format('woff'),
+        url('fonts/icomoon.svg?j5tn3a#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    
+    [class^="icon-"], [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    </style>
+
+</head>
+
+<body id="page-top" onload='hideTotal()'></body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="js-scroll-trigger" href="#page-top">
+        <i class="icon-Asset-17 home-icon "></i>
+      </a>
+      <a>
+        <i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Go-Fast Cyclomessagerie</i>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#team">Notre team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/gofast_cyclo/">
+            <i class="fa fa-instagram" style="color: #69b3a2"></i>
+          </a>
+        </li>
+    </div>
+  </nav>
+
+
+
+
+  <!-- =======================  LANDING SECTION ======================= -->
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/appHome.js"></script>
+
+
+  <!-- =======================  ABOUT SECTION ======================= -->
+
+
+
+
+  <section id="services" class="bg">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-12 text-center" style="padding-bottom: 3%">
+              <br>
+              <p style="display:inline; font-size: 35px">À propos</p>
+              <p>
+                <br>
+                Début 2021, des ancien.ne.s coursier.ère.s se regroupent pour fonder « Go-Fast »
+                une société coopérative de cyclomessagerie Genevoise.
+                <br>
+                <br>
+                La décision de fonder une nouvelle coopérative est née d'un désir de développer 
+                une structure horizontale et collaborative, ainsi qu'un service de cyclomessagerie social et solidaire s’inscrivant dans une économie de proximité. La visée de notre projet n’est donc pas seulement d’offrir un nouveau service de livraison rapide à vélo à Genève mais aussi de venir compléter un paysage associatif avec la création d'une structure s'engageant à mettre en réseau divers producteur.ice.s, artisan.e.s et consommateur.ice.s locaux.ales. D’autant plus, nous ne travaillons ni pour, ni à l'aide d'une application 
+                - le contact humain est mot d'ordre au sein de l'équipe et avec nos collaborateur.ice.s.
+                <br>
+                <br>
+                Il est inutile de préciser que nous effectuons tous nos services à vélo ou vélo-cargo, 
+                nous permettant d'aller d'un bout à l'autre du canton, sans subir le trafic ni perdre 
+                de temps à chercher une place de stationnement. De plus, cela a l'avantage de ne pas 
+                émettre de CO2 et de contribuer à la décongestion du centre-ville. Vos livraisons sont
+                 remises en main propre dans des délais inégalables, du lundi au vendredi, de 8h à 18h !
+                <br>
+                <br>
+                Pour les membres de Go-Fast, être coursier.ère.s représente bien plus qu'un métier, 
+                c'est faire partie de toute une communauté fondée autour de l'univers de la petite reine. L’aspect social est donc au cœur de nos priorités, nous nous impliquons dans divers projet allant au delà des livraisons. Par exemple, grâce au surplus alimentaires de certain.e.s de nos collaborateur.rice.s, nous organisons des repas populaires; nous offrons également une permanence de réparation 101 de vélo lors des heures d’ouvertures de notre local.
+              </p>
+            </div>
+        </div>
+        </div>
+</section>
+
+
+
+
+  <!-- ======================================================================= -->
+
+
+
+
+
+
+  <!-- ======================= CONTACT SECTION =============================== -->
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 text-center"></div>
+        <div class="col-lg-8 text-center">
+          <br><br><br>
+          <h2 class="section-heading text-uppercase" style="color: black">Contacts</h2>
+
+          <p> Contactez-nous au <a href="tel:022-734-15-23">022 734 15 23</a> ou par mail à
+            <a href="mailto:info@go-fast.ch">info@go-fast.ch</a>.</p>
+        <div style="text-align:center">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+          href="tel:022-734-15-23">Call</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+            href="mailto:info@go-fast.ch">Mail</a>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ======================== MAP SECTION ============================ -->
+  <!-- 46.212004, 6.142013 -->
+  <!-- center: { lat:  46.2044, lng: 6.1432 } ° N, -->
+
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <script>
+    var mymap = L.map('map').setView([46.212004,6.1432], 15);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
+    }).addTo(mymap);
+    var marker = L.marker([46.212004,6.1432]).addTo(mymap);
+  </script>
+
+
+
+
+
+
+  <!-- ======================= FOOTER SECTION ================================ -->
+  <footer>
+     <!--Copyright-->
+     <div class="footer-copyright py-3">
+      <small>Made by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
+      </a> </small> 
+        
+      <!--/github account-->
+    </div>
+
+    <!--/.Copyright-->
+  </footer>
+
+  <!-- ======================================================================= -->
+
+
+
+
+
+
+  <!-- ======================== JAVASCRIPT SECTION =========================== -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+  <script src="js/portfolio.js"></script>
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79254642-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-79254642-3');
+  </script> -->
+
+
+
+
+
+  <!-- ======================================================================= -->
+</body>
+
+</html>
