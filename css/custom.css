@@ -137,7 +137,7 @@ section {
 /* services */
 
 #scroll-serv{
-	height: 300px;
+	height: 400px;
 	overflow-y: scroll;
 }
   
@@ -196,3 +196,4 @@ color: white!important;
 	opacity: 1
 
 	}
+

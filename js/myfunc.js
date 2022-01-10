@@ -163,31 +163,31 @@ function hideTotal()
 }
 
 
-function highlight_map_states() {
+// function highlight_map_states() {
 
-    if ($(".states_section").size() > 0) {
+//     if ($(".states_section").size() > 0) {
 
-        $(".states_section .list_states .item .link").hover(function () {
-            var a = "#state_" + $(this).text().toLowerCase();
-            $(a).attr("class", "state hover");
-        }, function () {
-            var a = "#state_" + $(this).text().toLowerCase();
-            $(a).attr("class", "state")
-        })
-    }
-};
+//         $(".states_section .list_states .item .link").hover(function () {
+//             var a = "#state_" + $(this).text().toLowerCase();
+//             $(a).attr("class", "state hover");
+//         }, function () {
+//             var a = "#state_" + $(this).text().toLowerCase();
+//             $(a).attr("class", "state")
+//         })
+//     }
+// };
 
-$(function() {
-    var $tooltip = $('.tooltip');
+// $(function() {
+//     var $tooltip = $('.tooltip');
 
-    $('path, circle').click(function(e){
-        e.preventDefault();
-        var t = this.getBoundingClientRect().top,
-            l = this.getBoundingClientRect().left;
-        $tooltip.css({"top": t + "px", "left": l + "px"}).show();
-    });
+//     $('path, circle').click(function(e){
+//         e.preventDefault();
+//         var t = this.getBoundingClientRect().top,
+//             l = this.getBoundingClientRect().left;
+//         $tooltip.css({"top": t + "px", "left": l + "px"}).show();
+//     });
 
-    $('desc, text').click(function(e){
-        e.preventDefault();
-    });
-});
+//     $('desc, text').click(function(e){
+//         e.preventDefault();
+//     });
+// });
