@@ -90,7 +90,7 @@
 
 </head>
 
-<body id="page-top" onload='hideTotal()'></body>
+<body id="page-top" onload='hideTotal()'>
 
 
   <!-- Navigation -->
@@ -536,445 +536,102 @@
 
 
   <!-- ======================================================================= -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
+  <style>
+    img
+{
+   width: 50%;
+   margin: auto;
+}
+  </style>
 
+<section>
+  <div class="container">
+  <div id="randomCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-indicators" data-slide-to="1"></li>
+      <li data-target="#carousel-indicators" data-slide-to="2"></li>
+    </ol> -->
+  
+    <!-- Wrapper for slides -->
+      <div class="container">
+          <div class="carousel-inner">
 
-
-
-
-
-
-
-
-
-  <!-- ======================== BLOG SECTION ============================ -->
-  <!-- <section id="blog" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center" style="padding-bottom: 3%">
-          <p style="display:inline; font-size: 35px">BLOG</p>
-          <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
-          <h3 class="section-subheading text-muted">A few stories about statistics, R, dataviz. More or less linked with
-            our world, always related to data</h3>
-        </div>
-        <br><br>
-
-        <div class="col-lg-12 text-left" style="padding-bottom: 4%">
-          <a href="blog/dataToViz.html">
-            <p class="blogtitle">From Data to Viz - A classification of chart types based on input data format</p>
-          </a>
-          <p class="blogfeature">July 2018 - 6 minutes read</p>
-          <p class="blogtext">I’m delighted to announce a new dataviz project called <a
-              href="https://www.data-to-viz.com">Data to Viz</a>. It is a classification of chart types based on input
-            data format. It comes in the form of a decision tree leading to a set of potentially appropriate
-            visualizations to represent the dataset.<span class="blogreadmore"> - <a href="blog/dataToViz.html">Read
-                more</a></span></p>
-        </div>
-
-        <div class="col-lg-12 text-left" style="padding-bottom: 4%">
-          <p class="blogtitle">Pimp my RMD - A collection of tips for R Markdown</p>
-          <p class="blogfeature">July 2018 - 2 minutes read</p>
-          <p class="blogtext">R markdown creates interactive reports from R code. I’ve created a document that provides
-            a few tips I use on a daily basis to improve the appearance of my html outputs (my memory aid). This
-            document is built using R Markdown and hosted on Github.<span class="blogreadmore"> - Read more</span></p>
-        </div>
-
-        <div class="col-lg-12 text-left" style="padding-bottom: 3%">
-          <a class="btn btn-primary btn-xl text-uppercase" href="blog.html">See All</a>
-          <a class="btn btn-primary btn-xl text-uppercase" href="https://www.r-bloggers.com">R Blogger</a>
-        </div>
-
-
+      <div class="item active">
+        <img src="img/CAROUSEL/IMG1.jpg" class="d-block w-50" alt="First" class="center">
       </div>
-    </div>
-  </section> -->
-
-
-
-
-
-
-
-  <!-- ======================== WEBSITE SECTION ================================ -->
-
-<!-- 
-
-  <section class="" id="website" style="padding-top: 0px; padding-bottom: 0px">
-    <div class="parallaxwebsite">
-      <div class="container" style="padding-top: 80px; padding-bottom: 80px">
-
-        <div class="row">
-          <div class="col-lg-12 text-center" style="padding-bottom: 3%">
-            <p style="display:inline; font-size: 35px">Websites</p>
-            <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
-            <center>
-              <h3 style="max-width: 500px;  line-height: 27px;" class="section-subheading text-muted">I've developed
-                several websites dedicated to data visualization. These resources are visited about 30.000 times a day.
-              </h3>
-            </center>
-          </div>
-        </div>
-
-        <br><br>
-
-        <div class="row text-center">
-
-          <div class="col-lg-3 col-md-6 text-center" style="margin-bottom: 30px">
-            <h2 class="text-uppercase" style="border-bottom: solid; border-width: 1px; font-size: 29px">from Data To Viz
-            </h2>
-            <p style="color: grey">A classification of charts based on their input format, and a lot of tips and tricks.
-            </p>
-            <a href="https://www.data-to-viz.com" class="btn btn-secondary">Visit</a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" style="margin-bottom: 30px">
-            <h2 class="text-uppercase" style="border-bottom: solid; border-width: 1px; font-size: 29px">R Graph Gallery
-            </h2>
-            <p style="color: grey">Hundreds of R charts, always with reproducible code provided.</p>
-            <a href="https://www.r-graph-gallery.com" class="btn btn-secondary">Visit</a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" style="margin-bottom: 30px">
-            <h2 class="text-uppercase" style="border-bottom: solid; border-width: 1px; font-size: 29px">Python Gallery
-            </h2>
-            <p style="color: grey">A gallery of charts made with python, with a focus on Matplotlib and Seaborn.</p>
-            <a href="https://www.python-graph-gallery.com" class="btn btn-secondary">Visit</a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" style="margin-bottom: 30px">
-            <h2 class="text-uppercase" style="border-bottom: solid; border-width: 1px; font-size: 29px">D3 Graph Gallery
-            </h2>
-            <p style="color: grey">D3 is the ultimate tool for data visualization on the web. Tedious but limitless.</p>
-            <a href="https://www.d3-graph-gallery.com" class="btn btn-secondary">Visit</a>
-          </div>
-
-        </div>
+  
+      <div class="item">
+        <img src="img/CAROUSEL/IMG2.jpg" class="d-block w-50" alt="Second" class="center">
       </div>
-    </div>
-  </section> -->
-
-
-
-
-
-
-  <!-- ======================== PORTFOLIO SECTION ============================ -->
-  <!-- Images must be 380 x 445, resize them with -->
-  <!-- Change image size o have height = 445: convert tmp.png -resize 380x445 new.png -->
-  <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
-  <!-- Or adapt to add height on top / bottom -->
-
-   <!-- <style>
-    .explanation_portfolio {
-      font-size: 14px;
-      margin: 20px;
-    }
-  </style> -->
-
-  <!-- <section class="bg-light" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
-          <div id="portfolio-button-container">
-            <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
-            <button class="btn btn-secondary" data-portfolio-section="mining">Data mining</button>
-            <button class="btn btn-secondary" data-portfolio-section="dataviz">Dataviz</button>
-            <button class="btn btn-secondary" data-portfolio-section="paper">Scientific paper</button>
-          </div>
-          <br>
-        </div>
+  
+      <div class="item">
+        <img src="img/CAROUSEL/IMG3.jpg" class="d-block w-50" alt="Third" class="center">
       </div>
-      <br><br>
-      <div id="portfolio-items" class="row">
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG4.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG5.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG6.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG7.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG8.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG9.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
+
+      <div class="item">
+        <img src="img/CAROUSEL/IMG10.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
 
 
+      <div class="item">
+        <img src="img/CAROUSEL/IMG11.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper">
-          <a class="portfolio-link" data-toggle="modal" href="#SBM">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Sensory Brain Mapping</p>
-                <hr>
-                <p class="explanation_portfolio">Investigating the neuronal networks underlying 
-                  fundamental processes of taste perception.<br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/brain_short.png" alt="">
-          </a>
-        </div>
+      <div class="item">
+        <img src="img/CAROUSEL/IMG12.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper ">
-          <a class="portfolio-link" data-toggle="modal" href="#BMS">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Voxel-wise Bayesian model selection</p>
-                <hr>
-                <p class="explanation_portfolio">A technique to compare brain maps using Bayesian methods.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/fmriBMS_short.png" alt="">
-          </a>
-        </div> -->
+      <div class="item">
+        <img src="img/CAROUSEL/IMG13.jpg" class="d-block w-50" alt="Third" class="center">
+      </div>
 
-<!--
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#terresInovia">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Dashboard for Terres Inovia</p>
-                <hr>
-                <p class="explanation_portfolio">A dashboard allowing to quickly access information in <i>Terres
-                    Inovia</i> database</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/TI4.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#comoProject">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>The Como Project</p>
-                <hr>
-                <p class="explanation_portfolio">Webpage describing a study of interconnection between mental disorders.
-                  Published in <i>JAMA Psychiatry</i><br><br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/como.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz mining">
-          <a class="portfolio-link" data-toggle="modal" href="#authorRelation">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Co-authorship network</p>
-                <hr>
-                <p class="explanation_portfolio">Visualize how all the co-authors of my previous supervisor are inter
-                  connected.<br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Network_Coauthor.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show  column dataviz ">
-          <a class="portfolio-link" href="blog/dataToViz.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>From data to viz</p>
-                <hr>
-                <p class="explanation_portfolio">A classification of chart types based on input data format</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/poster_sample.png" alt="data to viz logo">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dashboard shiny mining">
-          <a class="portfolio-link" data-toggle="modal" href="#greenTech">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>GreenTech Challenge</p>
-                <hr>
-                <p class="explanation_portfolio">A dataviz challenge on water pollution in France. Third price at the
-                  <i>GreenTech Challenge.</i></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/GreenTech.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#unics">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>UNICS</p>
-                <hr>
-                <p class="explanation_portfolio">Online tool to estimate standard error of allele frequency in
-                  pool-sequencing experiments. Published in <i>Molecular Ecology</i></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Unics.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column mining" style="background-color: white;">
-          <a class="portfolio-link" target="_blank" href="https://munoztd0.github.io/Crypto-Arbitrage/">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Crypto Arbitrage</p>
-                <hr>
-                <p class="explanation_portfolio">A data driven study of crypto arbitrage feasability.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Crypto.png" alt="" align="middle">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column mining">
-          <a class="portfolio-link" data-toggle="modal" href="#surfers">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Where Surfers travel</p>
-                <hr>
-                <p class="explanation_portfolio">Harvesting millions of tweets to understand where surfer travel</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Surf.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper mining">
-          <a class="portfolio-link" target="_blank" href="https://link.springer.com/article/10.1007/s00122-017-2904-6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Wheat resistance to<br>the WSSMV virus</p>
-                <hr>
-                <p class="explanation_portfolio">A scientific publication in Theoretical and Applied Genetics.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/WSSMV.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper mining">
-          <a class="portfolio-link" target="_blank"
-            href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154609">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Genotyping by sequencing</p>
-                <hr>
-                <p class="explanation_portfolio">Genotyping by Sequencing Using Specific Allelic Capture to Build a
-                  High-Density Genetic Map of Durum Wheat</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/capture.png" alt="">
-          </a>
-        </div>-->
-
-
-      <!-- </div>
     </div>
-  </section>  -->
-
-
-  <!-- ======================================================================= -->
-
-
-
-
-
-
-
-  <!-- =========================== REFERENCE SECTION ============================ -->
-
-<!-- 
-  <section id="testimonial">
-    <div class="container">
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/biotech.jpg" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"I had the pleasure to collaborate with David 
-                  on a project where he successfully adapted a data analysis pipeline developed 
-                  at the California Institute of Technology to retrieve physiological signal from 
-                  a very noisy dataset. [...] David also has impressive skills in data visualization, 
-                  which were critical for a clear and transparent communication of the results. "</i></p>
-                <p><a href="https://www.unige.ch/fapse/e3lab/members1/senior-researchers-and-lecturers/dr-eva-r-pool/">Dr. Eva R. Pool</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Senior Researcher at <a
-                        href="https://www.campusbiotech.ch/en">Campus Biotech</a></i></span></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/CISA.jpg" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"David was able to implement a series of complex statistical 
-                  analysis on four-dimensional data, such as massive univariate general linear models, multivariate pattern analysis, 
-                  functional time-series analysis and hierarchical Bayesian modeling. Moreover, he assisted in the administration 
-                  of our high-performance computing server, by installing data management tools and pipelines and maintaining them up to date."</i></p>
-                <p><a href="https://www.unige.ch/fapse/e3lab/director/">Pr. D. Sander</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Director of the <a
-                        href="https://www.affective-sciences.org">Swiss Center for Affective Sciences</a></i></span></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/BBL.jpg" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"David has proven to be a driving force in the development of large database 
-                  analysis techniques that laboratories like ours are now faced with. Not only does he have the ability to understand 
-                  the intricacies and limitations of the procedures he employs, but he concretely implements them by coding effective 
-                  solutions that he has subsequently disseminated to the community in a spirit of rigor and honesty. David has an immediate 
-                  understanding of the issues at stake in the task at hand and views difficulties as challenges rather than problems."</i></p>
-                <p><a href="https://bbl.unige.ch/home-1/organisation/bbl-staff/delplanque-sylvain/">Dr. S. Delplanque</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Senior Researcher at <a
-                        href="https://bbl.unige.ch/">Brain and Behaviour Laboratory</a></i></span></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/neuro.jpg" style="border-radius: 50%;" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"I would never have been able to carry out my statistical 
-                  analyses without internship supervisor; David Muñoz Tord. He taught me a lot of skills that I
-                  could use in the future. He is a smart and talented person and I am very grateful to have had the
-                  opportunity to work with."</i></p>
-                <p><a href="https://www.linkedin.com/in/bryan-sanders14/?originalSubdomain=ch"></a> Bryan Sanders - <span
-                    style="font-size: 12px; display: inline;"><i>Master student at the <a
-                        href="https://neurocenter-unige.ch/">Geneva Neurocenter</a></i></span></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  
+      <!--Next and Previous buttons-->
+      <a class="carousel-control-prev" href="#randomCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a>   
+      <a class="carousel-control-next" href="#randomCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    </div>
-  </section> -->
-
+      </a>
+  </div>
+</div>
+</section>
 
   <!-- ======================================================================= -->
 
@@ -1441,5 +1098,8 @@
 
   <!-- ======================================================================= -->
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </html>
