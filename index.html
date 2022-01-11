@@ -32,6 +32,7 @@
   <meta property="og:type" content="website" />
 
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/css/bootstrap.css" crossorigin="anonymous">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
@@ -54,9 +55,7 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
 
-     <!-- CALC -->
-  <script type="text/javascript" src="js/myfunc.js"></script>
-  
+
   <!-- load special icons -->
   <style>
     @font-face {
@@ -117,7 +116,7 @@
             <a class="nav-link js-scroll-trigger" href="about.html">À propos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#news">News</a>
+            <a class="nav-link js-scroll-trigger" href="#colab">Collaboration</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Notre team</a>
@@ -199,7 +198,7 @@
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="urgent" onclick="calculateTotal()" />Urgent (30 minutes)</label><br/>
               <br/>
 
-              <label >Poids (seulement si course simple)</label>
+              <label >Poids (seulement si course standard)</label>
        
               <select id="poids" name='poids' onchange="calculateTotal()">
               <option value="None">Choisir poids</option>
@@ -246,79 +245,13 @@
      </form>
     </div>
 </div>
-
+</div>
+</section>
 <!--End of wrap-->
 
-      
-      <div class="row">
-        <!-- <div class="col-lg-4 text-center">
-          <img class="img-fluid" src="img/team/DMT_pic_square.png" alt="David Muñoz Tord profile picture"
-            style="margin-bottom: 30px">
-        </div> -->
-        <div class="col-lg-8 text-center ">
-          <!-- Calculer le prix-->
-            <br>
-            <!-- <p>Appelez-nous au <a href="tel:022-734-15-23" class="btn text-white bg-dark">022 734 15 23   </a> </p> -->
-        </div>
-      </div>
-
-      <center>
-      
-    </center>
-
-
-      
-      
-
-
-
-      <!-- <div class="row hide-if-small-screen" style="padding-top: 5%">
-        <div class="col-lg-12 text-center">
-          <svg width="1000" height="100">
-            <line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5" />
-
-            <circle cx="200" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
-            <text text-anchor="middle" x="200" y="80" fill="black">2018</text>
-            <text font-size="13" text-anchor="middle" x="100" y="30" fill="black">Master Degree</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="100" y="80" fill="#808080">Geneva Neurocenter</text>
-
-            <circle cx="400" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
-            <text text-anchor="middle" x="400" y="80" fill="black">2019</text>
-            <text font-size="13" text-anchor="middle" x="300" y="30" fill="black">Data Visualization</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#808080">Campus Biotech</text>
-
-            <circle cx="650" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
-            <text text-anchor="middle" x="650" y="80" fill="black">2020</text>
-            <text font-size="13" text-anchor="middle" x="525" y="30" fill="black">Data Analyst</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="525" y="80" fill="#808080">Swiss Center for </text> 
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="525" y="95" fill="#808080">Affective Sciences</text>
-
-
-            <circle cx="850" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
-            <text text-anchor="middle" x="850" y="80" fill="black">2021</text>
-            <text font-size="13" text-anchor="middle" x="750" y="30" fill="black">Teaching Assistant</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">Statistics</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="95" fill="#808080">Univeristy of Geneva</text>
-
-            <text font-size="13" text-anchor="middle" x="930" y="30" fill="black">Data - Science - Viz</text>
-            <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80"
-              fill="#808080">Freelance</text> 
-
-          </svg>
-        </div>
-      </div> -->
-    </div>
-  </section>
 
 
   <!-- ======================================================================= -->
-
-
-
-
-
-
-
 
 
 
@@ -332,13 +265,16 @@
         <div class="col-lg-12 text-center" style="padding-bottom: 3%">
       
         <br><br>
+        <p style="display:inline; font-size: 35px">Nos services en bref</p>
+        <p>
+        <br>
           
           <div class="centered">
             <div class="row justify-content-center">
               <div class="col-lg-3 text-center">
                 <a data-toggle="modal" href="#simple"><i class="fa fa-bicycle services-logo"></i></a>
                 <a data-toggle="modal" href="#simple">
-                  <h4>Course simple</h4>
+                  <h4>Course standard</h4>
                 </a>
                 <p>  </p>
                 <a data-toggle="modal" href="#simple" style="font-size: 23px">+</a>
@@ -365,168 +301,28 @@
           </div>
         </div>
       </div>
-          <br><br><br>
-          <div id="scroll-serv" class="container">
-            <div class="row justify-content-md-center">
-          <center>
-            <div class="col-lg-8 text-center text-md-left bg-light">
-              <br>
-              <p style="display:inline; font-size: 35px">Nos services en bref</p>
-              <p>
-              <br>
-              <small> Partout sur le canton et jusqu'à Nyon, du lundi au vendredi, de 8h à 18h, par tous les temps nos
-               coursiers.ères viennent directement à vous pour récupérer votre paquet et l'amène directement à 
-                vôtre destinataire.
+          
+      <div class="container">
+        <div class="row justify-content-md-center">
+      <center>
+        <div class="col-lg-8 text-center text-md-left bg-light">
+          <br>
+          <small> Partout sur le canton et jusqu'à Nyon, du lundi au vendredi, de 8h à 18h, par tous les temps nos
+           coursiers.ères viennent directement à vous pour récupérer votre paquet et l'amène directement à 
+            vôtre destinataire.
 
-                <br><br>
-                De 30min à 1h pour le centre-ville, de 45min à 1h30 pour les différentes zones extérieures.
-                
-                <br><br>
-                
-                Nous offrons une ample variété de services: 
-                <ul>
-                  <li>
-                    Course simple, adresses multiple ou aller-retour. 
-                  </li>
-                  <li>
-                    Livraison de petit colis (rentre dans un grand sac à dos) ou de colis encombrant (transporté en vélo cargo).
-                  </li>
-                  <li>
-                  Course sur appel ou ordre permanent (possibles réductions pour tournées de distribution régulières, demandez un devis).
-                  </li>
-                  <li>
-                    Retrait cases postales, apostilles et légalisations de documents, visas et démarche consulaire.
-                  </li>
-                </ul>  
-                <br>
+            <br><br>
+            De 30min à 1h pour le centre-ville, de 45min à 1h30 pour les différentes zones extérieures.
+            
+            <br><br>
 
-                Pour commander une course appelez nous au <a href="tel:022-734-15-23">022 734 15 23</a>, ou contactez nous par e-mail au 
-                <a href="mail:info@go-fast.ch">info@go-fast.ch</a>. Indiquez-nous les adresses de l'expéditeur et du destinataire, ainsi que
-                l'urgence de l'envoi (rapide ou urgent) et nous nous occupons du reste.
-                
-                <br><br>
-                L'ouverture d'un compte est nécessaire pour les paiements par facture, sinon il 
-                vous faudra régler en espèce le montant de la course au/à la coursier.ère en charge de vôtre 
-                envoie.
+            <a href="services.html"> <i>En savoir plus</i>
+            </a> 
+            <br>
 
-                <br><br><br>
-                <h4>  Conditions générales</h4>
-                <!-- Comme preuve de la prise en charge et de livraison, 
-                vous recevrez automatiquement des photo des signatures sur votre adresse e-mail.
-                <br><br> -->
-
-                <br>
-                <h5> Responsabilité du client </h5> 
-                
-                <br>
-                <h6> Information de livraison </h6>
-                La mandataire est chargé.e de transmettre les informations nécessaires au bon déroulement de la prestation :
-                Nom/compagnie, adresse, numéro de téléphone, personne de contact, et tout autres renseignements requis (code, numéro de boîte aux lettres…) du mandataire et du destinataire. 
-                Tout besoin spécifique lié à la manutention et distribution du colis.
-                
-                <br><br>
-                <h6> Distribution et réception</h6>
-                Outre cas spécifique, une signature est exigée à la réception de la marchandise.
-                Tout colis déposé sans signature à la demande du destinataire ou du mandataire n'est plus sous la responsabilité de Go-Fast.
-                
-                <br><br>
-                <h6>Emballage</h6>
-                Il est de la responsabilité du client d'emballer le colis de manière à permettre son transport sans encombre. 
-                
-                <br><br>
-                <h6>Colis non conforme</h6>
-                Si le colis ne correspond pas à ce qui a été défini préalablement avec le mandataire, et que le.la coursier.ère se retrouve dans l’incapacité de réaliser la prestation, nous nous réservons le droit de l’annuler. Les frais de la prestation seront tout de même facturés au client. 
-                
-                <br><br>
-                <h6>Temps d'attente</h6>
-                Les premières 5 minutes d'attente sont comprises dans la prestation. Au-delà, chaque minute est facturée 1.-.
-                
-                <br><br>
-                <h6>Traitement de documents</h6>
-                Le temps dédié par la.e coursier.ère au traitement de documents (file d'attente, signature…) est facturé au même titre que le temps d'attente. 
-                
-                <br><br>
-                <h6> Prestation nécessitant un déboursement</h6>
-                Go-Fast ne fait pas d'avance monétaire. Si la prestation nécessite un déboursement, celui-ci doit être prévu au préalable par le mandataire. 
-                Tout trajet additionnel effectué par le.la coursier.ère occasionné par un oubli de la mention précédente sera facturé à la charge du mandataire. 
-                
-                <br><br>
-                <h6>Mauvaise adresse</h6>
-                Des frais seront appliqués si une fois rendue à l'adresse de prise en charge ou de livraison, lae coursier.ère réalise que le client a communiqué une adresse incorrecte. Si la zone de livraison de la nouvelle adresse reste inchangé, 5.- supplémentaires seront facturés. Cependant, si la zone de livraison de la nouvelle adresse diffère, l’équivalent d’une prestation additionnelle sera facturé.
-                
-                <br><br>
-                <h6>Livraison annulée, déplacée ou destinataire absent</h6>
-                Toute livraison annulée ou déplacée avant que le.la coursier.ère ne soit rendu.e au lieu de retrait n'occasionne aucun frais.
-                Toute livraison annulée ou déplacée après que le.la coursier.ère se soit rendu.e au lieu de retrait occasionne des frais équivalant au prix de la prestation (standard ou cargo), avec en sus la moitié des suppléments poids et zone.
-                
-                Si le destinataire est absent, et que le colis doit être retourné au mandataire ou délivré ultérieurement, l'équivalent d'une adresse supplémentaire est facturé. Dans le cas où le colis doit être délivré ultérieurement, ce dernier est stocké au frais et au risque du mandataire. 
-                
-                <br><br><br>
-                <h5>Engament Go-Fast</h5>
-                
-                <br>
-                Go-Fast s'engage à accomplir les prestations dans les termes convenus et ce avec professionnalisme, soin et confidentialité.
-                
-                <br><br>
-                <h6>Délais de livraison</h6>
-                En cas de dépassement de plus de 10 minutes des délais de livraisons (sauf cas de force majeure), le mandataire est en droit de demander une révision du prix de la prestation. 
-                
-                <br><br>
-                <h6>Marchandises non prise en charge</h6>
-                Go-Fast ne prend pas en charge les marchandises illicites.
-                Nous faisons confiance aux client.e.s sur leur intégrité morale quant au contenu des colis. En cas de contrôle de police, le.a coursier.ère n'est en aucun cas responsable du contenu du colis. 
-                Go-Fast se réserve le droit de refuser une prestation si celle-ci va à l'encontre des valeurs décrites dans la charte.
-                
-                <br><br>
-                <h6>Détérioration ou vol</h6>
-                Go-Fast assure des frais de dédommagement d'un montant maximal de 1000.- en cas de vol ou de détérioration de la marchandise, entre sa prise en charge et sa remise. 
-                
-                <br><br>
-                <h6>Go-Fast n'est cependant pas responsable des :</h6>
-                Dommages dû à un emballage inadéquat.
-                Détériorations des marchandises qui auraient pu subvenir avant la prise en charge par Go-Fast.
-                Dommages résultants des aléas naturels (pluie, neige, variations de température), de dégâts magnétiques ou de forces majeures, dans la mesure où Go-Fast a fait son nécessaire pour protéger les marchandises.
-                Marchandises disparues ou détériorées n'ayant pas été remises en main propre à la demande du client.
-                
-                Toute détérioration doit être signalé par écrit à info@go-fast.ch dans les huit jours suivant l'incident.
-                
-                <br><br>
-                <h6>Protection des données</h6>
-                Go-Fast se réserve le droit de conserver certaines données nécessaires aux prestations afin de faciliter les futures prestations. Celles-ci restent confidentielles au sein de Go-Fast, et ne seront divulguées à un tiers que lorsque cela est convenu avec le propriétaire des données. 
-                
-                <br><br>
-                <h5>Prix</h5>
-                Les prix annoncés sur le site web de Go-Fast sont à titre indicatif.
-                Le prix de la course est établi lors de la confirmation de la prestation. Toutefois, Go-Fast se réserve le droit de revoir le prix de la prestation si les données ne correspondent pas à ce qui à été convenu préalablement. 
-                
-                <br><br>
-                <h6>Modalité de paiement</h6>
-                Pour les clients réguliers, les factures sont envoyées à la fin de chaque mois et doivent être payées dans un délai de 30 jours.
-                Pour les clients occasionnels, les payements (comptants ou bancaires) doivent être effectués le jour même. Le.la mandataire se doit d'avertir si la prestation est à la charge de l’envoyeur, du receveur ou d’un tiers. 
-                Les factures impayées sont assujetties à des frais de 5% pour chaque tranche de deux semaines de retard.
-                Par la confirmation de la prestation orale ou écrite, le client et Go-Fast s'engagent à honorer le contrat.
-                
-                <br><br>
-                <h6>Organe de conciliation</h6>
-                Si un différent subsiste entre Go-Fast et un tiers, l'organe de conciliation PostCom peut être consulté (www.ombud-postcom.ch).
-                
-                <br><br>
-                <h6>Droit applicable/For juridique</h6>
-                Le droit Suisse s'applique aux conditions générales, le for juridique est à Genève.
-                
-
-                <br><br>
-                <h6>Modification des conditions générales</h6>
-                Go-Fast se réserve le droit de modifier les présentes conditions générales.
-              </small>
-              <!--  Il est possible de conclure une assurance particulière. -->
-              <br><br>
-              </p>
-            </div>
-          </center>
+          </div>
         </div>
         </div>
-      </div>
     </div>
 
   </div>
@@ -536,23 +332,15 @@
 
 
   <!-- ======================================================================= -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
-  <style>
-    img
-{
-   width: 50%;
-   margin: auto;
-}
-  </style>
 
 <section>
+  <br><br>
   <div class="container">
+    <br>
+    <p style="text-align: center; font-size: 35px ">Nos péripéties</p>
+    <p>
+    <br>
   <div id="randomCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <!-- <ol class="carousel-indicators">
@@ -640,7 +428,59 @@
 
 
 
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="section-heading text-uppercase" style="color: black; text-align:center">Contacts</h2>
+      <br>
+            
+  
+      <p style="text-align:center"> Contactez-nous au <a href="tel:022-734-15-23">022 734 15 23</a> ou par mail à
+        <a href="mailto:info@go-fast.ch">info@go-fast.ch</a>.</p>
+    <div style="text-align:center">
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+      href="tel:022-734-15-23">Call</a>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+        href="mailto:info@go-fast.ch">Mail</a>
 
+        <br><br><br><br>
+
+       <!-- <div class="row"> -->
+        <center>
+        <div class="col-md-5"> 
+            <!-- ======================== MAP SECTION ============================ -->
+            <!-- 46.212004, 6.142013 -->
+            <!-- center: { lat:  46.2044, lng: 6.1432 } ° N, -->
+
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <script>
+              var mymap = L.map('map').setView([46.212004,6.1432], 15);
+              L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox/streets-v11',
+                tileSize: 512,
+                zoomOffset: -1,
+                accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
+              }).addTo(mymap);
+              var marker = L.marker([46.212004,6.1432]).addTo(mymap);
+            </script>
+            <br>    
+        <p style="text-align:center"> Ou passez nous visiter à nos locaux au 18 rue de Montbrillant </p>   
+
+
+
+      <!-- </div> -->
+      <!-- <div class="col-md-7 pull-right">
+        <div class="row"> -->
+          <!-- <div class="col-lg-2 text-center"></div>
+          <div class="col-lg-8 text-center"> -->
+ 
+      <!-- </div> -->
+  </div>
+  </center>
+</div>
+  </section>
 
 
 
@@ -650,8 +490,10 @@
 
   <!-- ======================= CONTACT SECTION =============================== -->
 
-  <section id="contact" class="bg-light">
+  <!-- <section id="contact" class="bg-light">
     <div class="container">
+      <div class="col">
+        <h2 class="section-heading text-uppercase" style="color: black">Contacts</h2>
       <div class="row">
         <div class="col-lg-2 text-center"></div>
         <div class="col-lg-8 text-center">
@@ -670,8 +512,9 @@
         <br>
       </div>
     </div>
+    </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -723,10 +566,10 @@
                   <i class="fa fa-bicycle services-logo"></i>
                   <br><br>
                   
-                  <h4>Course simple</h4>
+                  <h4>Course standard</h4>
                   <br>
                   <p style="max-width: 600px" class="text-md-left">  
-                    Prix pour course simple, colis de petite taille (rentre dans grand sac à dos ~ 50L) et faisant moins de 2 kg.
+                    Prix pour course standard, colis de petite taille (rentre dans grand sac à dos ~ 50L) et faisant moins de 2 kg.
                   </p>
                   <div style="text-align: center">
                     <table class="table table-hover">
@@ -767,8 +610,8 @@
                       </li>
                       <li>
                         Attente (démarches administratives ou autre): Supplément de 1.00 CHF par
-                    minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
-                    soit présent à l'arrivée du/de la coursier.ère.
+                        minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
+                        soit présent à l'arrivée du/de la coursier.ère.
                   </li>
                   </ul>
                    </small>
@@ -1079,9 +922,18 @@
   <script src="js/agency.min.js"></script>
   <script src="js/portfolio.js"></script>
 
+  <!-- CALC -->
+  <script type="text/javascript" src="js/myfunc.js"></script>
+
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
 
+
+  <!-- caorusle plugins -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"  crossorigin="anonymous"></script>
+  <script src="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/js/bootstrap.js" crossorigin="anonymous"></script>
+    
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79254642-3"></script>
   <script>
@@ -1099,7 +951,6 @@
   <!-- ======================================================================= -->
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 
 </html>

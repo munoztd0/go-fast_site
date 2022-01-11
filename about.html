@@ -96,7 +96,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="js-scroll-trigger" href="#page-top">
+      <a class="js-scroll-trigger" href="index.html">
         <i class="icon-Asset-17 home-icon "></i>
       </a>
       <a>
@@ -114,7 +114,7 @@
             <a class="nav-link js-scroll-trigger" href="index.html#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">À propos</a>
+            <a class="nav-link js-scroll-trigger" href="#about">À propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="index.html#news">News</a>
@@ -151,7 +151,7 @@
 
 
 
-  <section id="services" class="bg">
+  <section id="about" class="bg">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-lg-12 text-left" style="padding-bottom: 3%">
@@ -193,58 +193,6 @@
 
 
   <!-- ======================================================================= -->
-
-
-
-
-
-
-  <!-- ======================= CONTACT SECTION =============================== -->
-
-  <section id="contact" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 text-center"></div>
-        <div class="col-lg-8 text-center">
-          <br><br><br>
-          <h2 class="section-heading text-uppercase" style="color: black">Contacts</h2>
-
-          <p> Contactez-nous au <a href="tel:022-734-15-23">022 734 15 23</a> ou par mail à
-            <a href="mailto:info@go-fast.ch">info@go-fast.ch</a>.</p>
-        <div style="text-align:center">
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-          href="tel:022-734-15-23">Call</a>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-            href="mailto:info@go-fast.ch">Mail</a>
-        </div>
-        <br>
-        <br>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-  <!-- ======================== MAP SECTION ============================ -->
-  <!-- 46.212004, 6.142013 -->
-  <!-- center: { lat:  46.2044, lng: 6.1432 } ° N, -->
-
-  <!--The div element for the map -->
-  <div id="map"></div>
-  <script>
-    var mymap = L.map('map').setView([46.212004,6.1432], 15);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
-    }).addTo(mymap);
-    var marker = L.marker([46.212004,6.1432]).addTo(mymap);
-  </script>
 
 
 
