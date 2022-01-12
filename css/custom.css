@@ -209,8 +209,9 @@ img  {
 	.flip-card {
 		background-color: transparent;
 		width: 264px;
-		height: 359px;
+		height: 420px;
 		perspective: 1000px;
+		margin-bottom: 20px;
 	  }
 	  
 	  .flip-card-inner {
@@ -236,7 +237,7 @@ img  {
 	  }
 	  
 	  .flip-card-front {
-		background-color: #bbb;
+		background-color: rgb(255, 255, 255);
 		color: black;
 	  }
 	  
