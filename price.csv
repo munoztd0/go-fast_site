@@ -1,13 +1,13 @@
-,centre-ville de Genève,Carouge + Chatelaine – Aïre + Lançy – Onex,Cointrin - Avanchets Chêne-Bougeries Conches Le Grand-Saconnex,Vernier Pregny-Chambésy Vessy Chêne-Bourg Troinex Plans-les-Ouates,Cologny Vandœuvres Thônex Veyrier Meyrin Bellevue Vésenaz,Bernex Confignon Collonge-Bellerive Satigny Genthod,Collex-Bossy Choulex Puplinge Perly-Certoux Bardonex - Croix-de-Rozon Aire-la-Ville,Laconnex Cartigny Versoix Presinge,Russin + Meinier,Jussy Avusy Avully Dardagny,Gy Corsier Anières,Hermance + Chancy
-centre-ville de Genève,0.00,5.00,10.00,15.00,20.00,25.00,30.00,35.00,40.00,45.00,50.00,55.00
-Carouge + Chatelaine – Aïre + Lançy – Onex,,5.00,15.00,20.00,25.00,30.00,35.00,40.00,45.00,50.00,55.00,60.00
-Cointrin - Avanchets Chêne-Bougeries Conches Le Grand-Saconnex,,,10.00,25.00,30.00,35.00,40.00,45.00,50.00,55.00,60.00,65.00
-Vernier Pregny-Chambésy Vessy Chêne-Bourg Troinex Plans-les-Ouates,,,,15.00,35.00,40.00,45.00,50.00,55.00,60.00,65.00,70.00
-Cologny Vandœuvres Thônex Veyrier Meyrin Bellevue Vésenaz,,,,,20.00,45.00,50.00,55.00,60.00,65.00,70.00,75.00
-Bernex Confignon Collonge-Bellerive Satigny Genthod,,,,,,25.00,55.00,60.00,65.00,70.00,75.00,80.00
-Collex-Bossy Choulex Puplinge Perly-Certoux Bardonex - Croix-de-Rozon Aire-la-Ville,,,,,,,30.00,65.00,70.00,75.00,80.00,85.00
-Laconnex Cartigny Versoix Presinge,,,,,,,,35.00,75.00,80.00,85.00,90.00
-Russin + Meinier,,,,,,,,,40.00,85.00,90.00,95.00
-Jussy Avusy Avully Dardagny,,,,,,,,,,45.00,95.00,100.00
-Gy Corsier Anières,,,,,,,,,,,50.00,105.00
-Hermance + Chancy,,,,,,,,,,,,55.00
+id,1,2,3,4,5,6,7,8,9,10,11,12
+1,0,5,10,15,20,25,30,35,40,45,50,55
+2,5,5,15,20,25,30,35,40,45,50,55,60
+3,10,15,10,25,30,35,40,45,50,55,60,65
+4,15,20,25,15,35,40,45,50,55,60,65,70
+5,20,25,30,35,20,45,50,55,60,65,70,75
+6,25,30,35,40,45,25,55,60,65,70,75,80
+7,30,35,40,45,50,55,30,65,70,75,80,85
+8,35,40,45,50,55,60,65,35,75,80,85,90
+9,40,45,50,55,60,65,70,75,40,85,90,95
+10,45,50,55,60,65,70,75,80,85,45,95,100
+11,50,55,60,65,70,75,80,85,90,95,50,105
+12,55,60,65,70,75,80,85,90,95,100,105,55

@@ -246,3 +246,32 @@ img  {
 		color: white;
 		transform: rotateY(180deg);
 	  }
+
+
+
+/* form */
+label {
+	display: inline-block;
+	/* margin-bottom: 5px; */
+   }
+   
+   .form-row {
+	 display: flex;
+   }
+   
+   .form-group {
+	 padding: 5px;
+	 width: 50%;
+   }
+   
+   .form-group input {
+	 width: 50%;
+   }
+
+   div.submitWrapper  {
+	text-align: center;    
+ } 
+
+ div.totWrapper  {
+	text-align: right;    
+ } 

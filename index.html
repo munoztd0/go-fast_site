@@ -190,7 +190,7 @@
       </video>
     </div>
     <div class="col-md-7 pull-right">
-      <form action="" id="courseform" onsubmit="return false;">
+      <form action="" id="courseform" onsubmit="return doSomething();">
       <div>
           <div class="cont_order">
              <fieldset>
@@ -198,14 +198,32 @@
               <label >Type de course:</label>
               <label class='radiolabel'><input type="radio"  name="selectedtype" value="simple" onclick="calculateTotal()" />Simple</label> 
               <label class='radiolabel'><input type="radio"  name="selectedtype" value="cargo" onclick="calculateTotal()" />Cargo</label><br/>
-              <br/>
+              <br>
 
               <label >Urgence de la course:</label>
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="rapide" onclick="calculateTotal()" />Rapide (1 heure)</label>  
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="urgent" onclick="calculateTotal()" />Urgent (30 minutes)</label><br/>
-              <br/>
+              <br>
 
-              <label >Poids (seulement si course standard)</label>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Pick up:</label>
+                  <input type="number"  name="pick" placeholder="Code Postale" min="1200" max="1299">
+                  <!-- <input type="text" name="pick" placeholder="Code Postale" pattern="[0-9]{4}"> -->
+                </div>
+                <div class="form-group">
+                  <label for="fname">Destination:</label>
+                  <input type="number"  name="dest" placeholder="Code Postale" min="1200" max="1299">
+                  <!-- <input type="text" name="dest" placeholder="Code Postale" pattern="[0-9]{4}"> -->
+                </div>
+              </div>
+
+
+              <br>
+
+              
+              <label >Poids:</label>
        
               <select id="poids" name='poids' onchange="calculateTotal()">
               <option value="None">Choisir poids</option>
@@ -217,6 +235,12 @@
               <option value="5">6-7kg</option>
               <option value="6">>7kg</option>
              </select>
+
+             <br><br>
+
+             <div class='submitWrapper'>   
+             <input type="submit" value="Done">
+             <div>
               <!-- <br/>
               <p>
               <label for='includecandles' class="inlinelabel">Include Candles($5)</label>
@@ -228,7 +252,9 @@
               <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
               <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
               </p> -->
+              <div class='totWrapper'>
               <div id="totalPrice"></div>
+              </div>
               
               </fieldset>
           </div>
@@ -249,6 +275,7 @@
           </div> -->
           <!-- <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" /> -->
       </div>  
+      
      </form>
     </div>
 </div>
@@ -930,8 +957,8 @@
   <script src="js/portfolio.js"></script>
   
 
-  <script src="http://d3js.org/d3.v3.min.js"></script> 
-  <script src="d3.min.js?v=3.2.8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Select user name: <select id='options'></select> -->
 
   <!-- CALC -->
   <script type="text/javascript" src="js/myfunc.js"></script>
