@@ -5,6 +5,13 @@ www.gnu.org/licenses/lgpl.html
 You are free to use the code in Commercial or non-commercial projects
 */
 
+
+
+
+
+
+
+
  //Set up an associative array
  var type_course = new Array();
  type_course["simple"]=15;
@@ -19,15 +26,18 @@ You are free to use the code in Commercial or non-commercial projects
 
  var dist_prices1= new Array();
  dist_prices1["None"]=0;
+//  centre ville
  dist_prices1["1201"]=0;
- dist_prices1["1"]=5;
- dist_prices1["2"]=10;
- dist_prices1["3"]=15;
- dist_prices1["4"]=20;
- dist_prices1["5"]=25;
- dist_prices1["6"]=30;
- dist_prices1["7"]=35;
- dist_prices1["8"]=40;
+ dist_prices1["1202"]=0;
+ dist_prices1["1203"]=0;
+ dist_prices1["1204"]=0;
+ dist_prices1["1205"]=0;
+ dist_prices1["1206"]=0;
+ dist_prices1["1208"]=0;
+ dist_prices1["1209"]=0;
+ dist_prices1["1211"]=0;
+
+
 
  var poids_prices= new Array();
  poids_prices["None"]=0;
