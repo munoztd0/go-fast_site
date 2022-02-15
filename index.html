@@ -92,7 +92,10 @@
 </head>
 
 <body id="page-top" onload='hideTotal()'>
-
+<!-- Info Alert -->
+<div class="alert alert-info p-1 fade show">
+  <small> Ce site est encore en cours de construction.</small>
+</div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
@@ -140,18 +143,77 @@
     </div>
   </nav>
 
-
+  <hr style="height:11pt; visibility:hidden;" />
 
 
   <!-- =======================  LANDING SECTION ======================= -->
 
+  <header>
 
-  <header class="masthead">
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+    <br><br><br>
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="img/video/part1.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Go-Fast Cyclomessagerie</h1>
+          <p class="lead mb-0">La cyclomessagerie locale et solidaire faite par et pour les coursier.ère.s</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section id="description" class="bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+        </div> 
+        <div class="col-md-5">
+          <!-- <div class="arrowlanding">
+            <a class="js-scroll-trigger" href="#price"> -->
+  
+              <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase">Appellez-nous au 022 734 15 23</a>
+ 
+              <!-- <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p> -->
+            <!-- </a> -->
+          </div> 
+      <div class="col-md-5">
+        <a href="#price" class="btn btn-primary btn-xl text-uppercase">Calculer le prix de votre course</a>
+        <!-- <div class="arrowlanding">
+          <a class="js-scroll-trigger" href="#contact">
+            <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
+          </a>
+        </div>  -->
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <hr style="height:11pt; visibility:hidden;" />
+
+  <!-- <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase">022 734 15 23   </a> </p>
+  <br><br>
+
+  <p>Calcluler le prix de votre course!</p> -->
+
+  <!-- <header class="masthead">
     <div id="particles-js"></div>
-    <div class="textlanding">
+    <div class="textlanding"> -->
     <!-- <img width="150px" style="display:inline; margin-bottom: 20px; margin-right: 10px; margin-left: 10px"
     src="img/logo/Home_single_big.svg">  -->
-      <p style="display:inline; font-size: 35px; padding-left: 30px">La cyclomessagerie faite par et pour les coursier.ère.s</p></br>
+
+    <!-- <video  autoplay="autoplay" muted="muted" loop="loop">
+      <source src="img/video/part1.mp4" type="video/mp4">
+    </video> -->
+      <!-- <p style="display:inline; font-size: 35px; padding-left: 30px">La cyclomessagerie faite par et pour les coursier.ère.s</p></br>
     </br>
 
       <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
@@ -161,32 +223,37 @@
 
       <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase">022 734 15 23   </a> </p>
       <br><br>
+
+      <p>Calcluler le prix de votre course!</p>
+
+
       <div class="arrowlanding">
         <a class="js-scroll-trigger" href="#description">
           <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
         </a>
-      </div>
+      </div> -->
       <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Nos services</a> -->
-    </div>
+    <!-- </div> -->
 
-  </header>
+  <!-- </header> -->
 
 
   <!-- scripts -->
-  <script src="js/particles.js"></script>
-  <script src="js/appHome.js"></script>
+  <!-- <script src="js/particles.js"></script> -->
+  <!-- <script src="js/appHome.js"></script> -->
 
 
 
 
   <!-- =======================  DESCRIPTION SECTION ======================= -->
 
- <section id="description" class="bg-light">
+ <section id="price" class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-md-5">
-      <video width="320" height="240" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="img/logo/test.mp4" type="video/mp4">
+        <br><br>
+      <video width="450" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="img/video/test.mp4" type="video/mp4">
       </video>
     </div>
     <div class="col-md-7 pull-right">
@@ -194,13 +261,13 @@
       <div>
           <div class="cont_order">
              <fieldset>
-              <legend>Calcluler le prix de votre course!</legend>
-              <label >Type de course:</label>
+              <legend></legend>
+              <label >Type de vélo:</label>
               <label class='radiolabel'><input type="radio"  name="selectedtype" value="simple" onclick="calculateTotal()" />Simple</label> 
               <label class='radiolabel'><input type="radio"  name="selectedtype" value="cargo" onclick="calculateTotal()" />Cargo</label><br/>
               <br>
 
-              <label >Urgence de la course:</label>
+              <label >Type de course:</label>
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="rapide" onclick="calculateTotal()" />Rapide (1 heure)</label>  
               <label class='radiolabel'><input type="radio"  name="selectedurg" value="urgent" onclick="calculateTotal()" />Urgent (30 minutes)</label><br/>
               <br>
@@ -239,7 +306,7 @@
              <br><br>
 
              <div class='submitWrapper'>   
-             <input type="submit" value="Done">
+             <input type="submit" value="Calculer!">
              <div>
               <!-- <br/>
               <p>
@@ -339,9 +406,9 @@
       <div class="container">
         <div class="row justify-content-md-center">
       <center>
-        <div class="col-lg-8 text-center text-md-left bg-light">
+        <div class="col-lg-12 text-center text-md-left bg-light">
           <br>
-          <small> Partout sur le canton et jusqu'à Nyon, du lundi au vendredi, de 8h à 18h, par tous les temps nos
+           Partout sur le canton et jusqu'à Nyon, du lundi au vendredi, de 8h à 18h, par tous les temps nos
            coursiers.ères viennent directement à vous pour récupérer votre paquet et l'amène directement à 
             vôtre destinataire.
 
@@ -461,7 +528,7 @@
 
 
 
-
+<!-- 
   <section id="contact" class="bg-light">
     <div class="container">
       <h2 class="section-heading text-uppercase" style="color: black; text-align:center">Contacts</h2>
@@ -476,33 +543,10 @@
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
         href="mailto:info@go-fast.ch">Mail</a>
 
-        <br><br><br><br>
+        <br><br><br><br> -->
 
        <!-- <div class="row"> -->
-        <center>
-        <div class="col-md-5"> 
-            <!-- ======================== MAP SECTION ============================ -->
-            <!-- 46.212004, 6.142013 -->
-            <!-- center: { lat:  46.2044, lng: 6.1432 } ° N, -->
-
-            <!--The div element for the map -->
-            <div id="map"></div>
-            <script>
-              var mymap = L.map('map').setView([46.212004,6.1432], 15);
-              L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                maxZoom: 18,
-                id: 'mapbox/streets-v11',
-                tileSize: 512,
-                zoomOffset: -1,
-                accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
-              }).addTo(mymap);
-              var marker = L.marker([46.212004,6.1432]).addTo(mymap);
-            </script>
-            <br>    
-        <p style="text-align:center"> Ou passez nous visiter à nos locaux au 18 rue de Montbrillant </p>   
-
-
+ 
 
       <!-- </div> -->
       <!-- <div class="col-md-7 pull-right">
@@ -511,10 +555,10 @@
           <div class="col-lg-8 text-center"> -->
  
       <!-- </div> -->
-  </div>
+  <!-- </div>
   </center>
 </div>
-  </section>
+  </section> -->
 
 
 
@@ -523,32 +567,68 @@
 
 
   <!-- ======================= CONTACT SECTION =============================== -->
-
-  <!-- <section id="contact" class="bg-light">
+  
+  
+  <section id="contact" class="bg-light">
     <div class="container">
-      <div class="col">
-        <h2 class="section-heading text-uppercase" style="color: black">Contacts</h2>
-      <div class="row">
-        <div class="col-lg-2 text-center"></div>
-        <div class="col-lg-8 text-center">
-          <br><br><br>
-          <h2 class="section-heading text-uppercase" style="color: black">Contacts</h2>
+      <h2 class="section-heading text-uppercase" style="color: black; text-align:center">Contacts</h2>
+      <br>
 
-          <p> Contactez-nous au <a href="tel:022-734-15-23">022 734 15 23</a> ou par mail à
-            <a href="mailto:info@go-fast.ch">info@go-fast.ch</a>.</p>
-        <div style="text-align:center">
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-          href="tel:022-734-15-23">Call</a>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-            href="mailto:info@go-fast.ch">Mail</a>
+      <div class="row">
+
+        <div class="col-md-1">
         </div>
-        <br>
-        <br>
+        <div class="col-md-4 text-center">
+          <br>
+            <h3> Contactez-nous au </h3>
+              
+            <h3><a href="tel:022-734-15-23">022 734 15 23</a> ou par mail </h3>
+            
+              <h3>à <a href="mailto:info@go-fast.ch">info@go-fast.ch</a>.</h3>
+              <br>
+          <div style="text-align:center">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+            href="tel:022-734-15-23">Call</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+              href="mailto:info@go-fast.ch">Mail</a>
+          </div>
+          <br>
+          <br>
+        </div>
+
+        <div class="col-md-1">
+          </div>
+        
+          <div class="col-md-5"> 
+            <center>
+              <!-- ======================== MAP SECTION ============================ -->
+              <!-- 46.212004, 6.142013 -->
+              <div id="map"></div>
+              <script>
+                var mymap = L.map('map').setView([46.212004,6.1432], 15);
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                  maxZoom: 18,
+                  id: 'mapbox/streets-v11',
+                  tileSize: 512,
+                  zoomOffset: -1,
+                  accessToken: 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg'
+                }).addTo(mymap);
+                var marker = L.marker([46.212004,6.1432]).addTo(mymap);
+              </script>
+              <br>    
+          <p style="text-align:center"> Ou passez nous visiter à nos locaux  </p> 
+          <p style="text-align:center"> au 18 rue de Montbrillant ! </p>   
+        </center>
+        </div>
+
+
+
       </div>
     </div>
-    </div>
+
   </div>
-</section> -->
+</section>
 
 
 
@@ -560,7 +640,7 @@
   <footer>
      <!--Copyright-->
      <div class="footer-copyright py-3">
-      <small>Made by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
+      <small> Made with love by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
       </a> </small> 
         
       <!--/github account-->
@@ -859,72 +939,6 @@
           </div>
         </div>
     </center>
-
-
-  <!-- Data mining -->
-  <center>
-    <div class="portfolio-modal modal fade" id="dataMining" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class='modal__overlay'></div>
-      <div class='modal__content'>
-      <div class="modal-dialog h-100">
-        <div class="modal-content">
-          <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-         </span>
-          <!-- <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div> -->
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <div class="modal-body">
-                  <i class="fa fa-search services-logo"></i>
-                  <h4>Data Mining</h4>
-                  <p style="max-width: 600px">Crunch the data to get answer to your question. Give insight to the
-                    information.</p>
-                  <div style="text-align: left">
-                    <h6>I can help you for</h6>
-                    <hr>
-                    <ul>
-                      <li><u>Exploratory analysis</u> of a dataset.</li>
-                      <li>Creation of clean and reproducible <u>reports</u> using <code>R Markdown</code>.</li>
-                      <li>Application of <u>statistical methods</u> on your dataset.</li>
-                      <li>Creation of <u>custom scripts</u> for analysing your data automatically</li>
-                    </ul>
-                    <br>
-                    <h6>Example:</h6>
-                    <hr>
-                    <ul>
-                      <li>I'm the author of several <a href="https://github.com/munoztd0/Publication">scientific
-                          publications</a> where I was in charge to explore and understand complex dataset in order to
-                        answer scientific questions.</li>
-                      <!-- <li>I recovered information about crypto currency prices on different exchanges and explored the
-                        data looking for <a target="_blank" href="https://munoztd0.github.io/Crypto-Arbitrage/">arbitrage
-                          opportunities</a>.</li> -->
-                    </ul>
-                    <br>
-                    <h6>Contact me</h6>
-                    <hr>
-                    <span>Tell me more about your project at <a
-                        href="mailto:david.munoztord@mailbox.org">david.munoztord@mailbox.org</a> to see if we can work
-                      together.</span>
-                    <div style="margin-top: 15px;">
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://github.com/munoztd0">Github</a>
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="mailto:david.munoztord@mailbox.org">Mail</a>
-                    </div>
-                    <br><br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </center>
 
 
 
