@@ -1,365 +1,396 @@
-#wrap {
-    width: 400px;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: 8px;
-    padding: 5px;
-    background: #fff;
-    font-family: AvenirLTStd, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 16px;
-}
-
-#wrap .cont_details fieldset,
-.cont_order fieldset {
-    margin: 10px;
-    padding: 20px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-}
-
-#wrap legend {
-    font-size: 16px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #000;
-    font-weight: bold;
-    font-style: italic;
-    padding-bottom: 10px;
-}
-
-#wrap .cont_details input {
-    margin-bottom: 10px;
-    color: #000;
-}
-
-#wrap .input1:hover,
-.input1:active {}
-
-#wrap label {
-    display: block;
-    font-size: 12px;
-    color: #000;
-    font-weight: bold;
-}
-
-#wrap label.inlinelabel {
-    display: inline;
-}
-
-#wrap .cont_order input {
-    margin-bottom: 5px;
-}
-
-#wrap .cont_order p {
-    padding-top: 5px;
-}
-
-#wrap input[type="radio"] {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-#wrap input[type="text"]:hover,
-#wrap input[type="text"]:active {
-    background-color: #FAF398;
-}
-
-#wrap input#submit {
-    margin: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#wrap div#totalPrice {
-    padding: 10px;
-    font-weight: bold;
-    background-color: grey;
-}
-
-#wrap label.radiolabel {
-    font-weight: normal;
-    display: inline;
-}
-
-input[type="radio"] {
-    margin: 5px;
-    display: table-cell;
-    vertical-align: middle
-}
-
-
-/* icons */
-
-.icon-Asset-17:before {
-    content: "\e901";
-    outline: none;
-}
-
-.icon-cargo:before {
-    content: "\e900";
-}
-
-.icon-Asset-17:before {
-    content: "\e901";
-    outline: none;
-}
-
-.icon-cargo:before {
-    content: "\e900";
-}
-
-.home-icon {
-    margin: 15px;
-    color: #69b3a2;
-    font-size: 45px;
-    outline: none;
-}
-
-.home-icon:hover {
-    color: white;
-    background-color: #69b3a2;
-    outline: none;
-}
-
-
-/* #others  */
-
-.btn {
-    color: #69b3a2 !important;
-}
-
-section {
-    padding: 35px;
-}
-
-
-/* services */
-
-#scroll-serv {
-    height: 400px;
-    overflow-y: scroll;
-}
-
-.centered {
-    margin: auto;
-}
-
-.services-logo {
-    margin: 15px;
-    color: #69b3a2;
-    font-size: 45px;
-    padding: 30px;
-    border-radius: 50%;
-    border-color: black;
-    border-width: 5px;
-    border: solid;
-}
-
-.services-cargo {
-    margin: 15px;
-    color: #69b3a2;
-    font-size: 90px;
-    padding: 13px;
-    border-radius: 50%;
-    border-color: black;
-    border-width: 5px;
-    border: solid;
-}
-
-.services-logo:hover {
-    color: white;
-    background-color: #69b3a2;
-}
-
-.services-cargo:hover {
-    color: white;
-    border-color: white;
-    background-color: #69b3a2;
-}
-
-.btn-primary:hover {
-    color: white!important;
-}
-
-.list-inline-item:hover {
-    color: white!important;
-}
-
-
-/* maps */
-
-
-/* Set the size of the div element that contains the map */
-
-#map {
-    height: 300px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-    background-color: grey;
-    pointer-events: none;
-    opacity: 1
-}
-
-
-/* carousel */
-
-img {
-    width: 50%;
-    margin: auto;
-}
-
-
-/* flip card */
-
-.flip-card {
-    background-color: transparent;
-    width: 264px;
-    height: 420px;
-    perspective: 1000px;
-    margin-bottom: 20px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
-
-.flip-card-back {
-    background-color: #ff00bf;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-
-/* form */
-
-label {
-    display: inline-block;
-    /* margin-bottom: 5px; */
-}
-
-.form-row {
-    display: flex;
-}
-
-.form-group {
-    padding: 5px;
-    width: 50%;
-}
-
-.form-group input {
-    width: 50%;
-}
-
-div.submitWrapper {
-    text-align: center;
-}
-
-div.totWrapper {
-    text-align: right;
-}
-
-
-/*  */
-
-.alert {
-    width: 20%;
-    /* height: 10px; */
-}
-
-
-/* 
+    #wrap {
+        width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 8px;
+        padding: 5px;
+        background: #fff;
+        font-family: AvenirLTStd, Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    
+    #wrap .cont_details fieldset,
+    .cont_order fieldset {
+        margin: 10px;
+        padding: 20px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    #wrap legend {
+        font-size: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #000;
+        font-weight: bold;
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+    
+    #wrap .cont_details input {
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    #wrap .input1:hover,
+    .input1:active {}
+    
+    #wrap label {
+        display: block;
+        font-size: 12px;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    #wrap label.inlinelabel {
+        display: inline;
+    }
+    
+    #wrap .cont_order input {
+        margin-bottom: 5px;
+    }
+    
+    #wrap .cont_order p {
+        padding-top: 5px;
+    }
+    
+    #wrap input[type="radio"] {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
+    #wrap input[type="text"]:hover,
+    #wrap input[type="text"]:active {
+        background-color: #FAF398;
+    }
+    
+    #wrap input#submit {
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #wrap div#totalPrice {
+        padding: 10px;
+        font-weight: bold;
+        background-color: grey;
+    }
+    
+    #wrap label.radiolabel {
+        font-weight: normal;
+        display: inline;
+    }
+    
+    input[type="radio"] {
+        margin: 5px;
+        display: table-cell;
+        vertical-align: middle
+    }
+    /* icons */
+    
+    .icon-Asset-17:before {
+        content: "\e901";
+        outline: none;
+    }
+    
+    .icon-cargo:before {
+        content: "\e900";
+    }
+    
+    .icon-Asset-17:before {
+        content: "\e901";
+        outline: none;
+    }
+    
+    .icon-cargo:before {
+        content: "\e900";
+    }
+    
+    .home-icon {
+        margin: 15px;
+        color: #69b3a2;
+        font-size: 45px;
+        outline: none;
+    }
+    
+    .home-icon:hover {
+        color: white;
+        background-color: #69b3a2;
+        outline: none;
+    }
+    /* #others  */
+    
+    .btn {
+        color: #69b3a2 !important;
+    }
+    
+    section {
+        padding: 35px;
+    }
+    /* services */
+    
+    #scroll-serv {
+        height: 400px;
+        overflow-y: scroll;
+    }
+    
+    .centered {
+        margin: auto;
+    }
+    
+    .services-logo {
+        margin: 15px;
+        color: #69b3a2;
+        font-size: 45px;
+        padding: 30px;
+        border-radius: 50%;
+        border-color: black;
+        border-width: 5px;
+        border: solid;
+    }
+    
+    .services-cargo {
+        margin: 15px;
+        color: #69b3a2;
+        font-size: 90px;
+        padding: 13px;
+        border-radius: 50%;
+        border-color: black;
+        border-width: 5px;
+        border: solid;
+    }
+    
+    .services-logo:hover {
+        color: white;
+        background-color: #69b3a2;
+    }
+    
+    .services-cargo:hover {
+        color: white;
+        border-color: white;
+        background-color: #69b3a2;
+    }
+    
+    .btn-primary:hover {
+        color: white!important;
+    }
+    
+    .list-inline-item:hover {
+        color: white!important;
+    }
+    /* maps */
+    /* Set the size of the div element that contains the map */
+    
+    #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+        background-color: grey;
+        pointer-events: none;
+        opacity: 1
+    }
+    /* carousel */
+    
+    img {
+        width: 50%;
+        margin: auto;
+    }
+    /* flip card */
+    
+    .flip-card {
+        background-color: transparent;
+        width: 264px;
+        height: 420px;
+        perspective: 1000px;
+        margin-bottom: 20px;
+    }
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    
+    .flip-card-back {
+        background-color: #ff00bf;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    /* form */
+    
+    label {
+        display: inline-block;
+        /* margin-bottom: 5px; */
+    }
+    
+    .form-row {
+        display: flex;
+    }
+    
+    .form-group {
+        padding: 5px;
+        width: 50%;
+    }
+    
+    .form-group input {
+        width: 50%;
+    }
+    
+    div.submitWrapper {
+        text-align: center;
+    }
+    
+    div.totWrapper {
+        text-align: right;
+    }
+    /*  */
+    
+    .alert {
+        width: 20%;
+        /* height: 10px; */
+    }
+    /* 
  video {
 	display: block;
 	margin: auto;
   } */
-
-header {
-    position: relative;
-    /* background-color: black; */
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-    position: relative;
-    z-index: 2;
-}
-
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* background-color: black; */
-    opacity: 0.05;
-    z-index: 1;
-}
-
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-
-
-/*   
-  @media (pointer: coarse) and (hover: none) {
-	header {
-	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-  
-	header video {
-	  display: none;
-	}
-  } */
-
-.js-scroll-trigger:hover {
-    text-decoration: none;
-}
+    
+    header {
+        position: relative;
+        /* background-color: black; */
+        height: 92vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    header .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* background-color: black; */
+        opacity: 0.05;
+        z-index: 1;
+    }
+    
+    .js-scroll-trigger:hover {
+        text-decoration: none;
+    }
+    /* sticky navbar and alert in front */
+    
+    .navbar {
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        z-index: 999;
+    }
+    
+    .alert {
+        position: sticky;
+        top: 0;
+        /* background-color: transparent; */
+        z-index: 999;
+    }
+    /* scroll text */
+    
+    .wrapper {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: marquee 20s linear infinite;
+    }
+    
+    .marquee p {
+        display: inline-block;
+        animation: marquee 20s linear infinite;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+    /* pause the animation on mouse over */
+    
+    .marquee p:hover {
+        animation-play-state: paused
+    }
+    
+    .marquee span:hover {
+        animation-play-state: paused
+    }
+    
+    .marquee span {
+        display: inline-block;
+        /* padding-left: 100%; */
+        text-indent: 0;
+        animation: marquee 15s linear infinite;
+        /* here you select the animation */
+    }
+    
+    #sticky {
+        position: sticky;
+        top: 95vh;
+        left: 0px;
+        /* width: 100%; */
+        /* height: 10vh; */
+        background-color: white;
+        z-index: 999;
+    }
