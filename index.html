@@ -114,8 +114,6 @@
 
         <!-- The header content -->
         <div class="container h-100">
-
-
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
 
@@ -131,7 +129,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-top" id="mainNav">
-        <div class="container">
+        <div class="container-fluid">
             <a class="js-scroll-trigger" href="#page-top">
                 <i class="icon-Asset-17 home-icon "></i>
             </a>
@@ -194,25 +192,89 @@
         </div>
     </div>
 
-
-
-    <section id="description" class="bg-white">
-        <div class="container">
+    <section id="price" class="bg-white">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-2 col-md-2">
-                </div>
-                <div class="col-lg-5 col-md-5">
-                    <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Appellez-nous</a>
-                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <form style="border:1px solid black" action="" id="courseform" onsubmit="return doSomething();">
+                        <div class="cont_order">
+                            <fieldset>
+                                <legend></legend>
+                                <label>Type de vélo:</label>
+                                <label class='radiolabel'><input type="radio" name="selectedtype" value="simple"
+                                    onclick="calculateTotal()" />Simple</label>
+                                <label class='radiolabel'><input type="radio" name="selectedtype" value="cargo"
+                                    onclick="calculateTotal()" />Cargo</label><br />
+                                <br>
 
-                <div class="col-lg-5 col-md-5">
-                    <a href="#price" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Calculer votre
-                        prix</a>
-                </div>
+                                <label>Type de course:</label>
+                                <label class='radiolabel'><input type="radio" name="selectedurg" value="rapide"
+                                    onclick="calculateTotal()" />Rapide (1 heure)</label>
+                                <label class='radiolabel'><input type="radio" name="selectedurg" value="urgent"
+                                    onclick="calculateTotal()" />Urgent (30 minutes)</label><br />
+                                <br>
 
-            </div>
-        </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fname">Pick up:</label>
+                                        <input type="number" name="pick" placeholder="Code Postale" min="1200" max="1299">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname">Destination:</label>
+                                        <input type="number" name="dest" placeholder="Code Postale" min="1200" max="1299">
+
+                                    </div>
+                                </div>
+
+
+                                <br>
+
+
+                                <label>Poids:</label>
+
+                                <select id="poids" name='poids' onchange="calculateTotal()">
+                                <option value="None">Choisir poids</option>
+                                <option value="0">0-2kg</option>
+                                <option value="1">2-3kg</option>
+                                <option value="2">3-4kg</option>
+                                <option value="3">4-5kg</option>
+                                <option value="4">5-6kg</option>
+                                <option value="5">6-7kg</option>
+                                <option value="6">>7kg</option>
+                            </select>
+
+                                <br><br>
+
+                                <div class='submitWrapper'>
+                                    <input type="submit" value="Calculer !">
+                                    <div>
+
+                                        <div class='totWrapper'>
+                                            <div id="totalPrice"></div>
+                                        </div>
+
+                            </fieldset>
+                            </div>
+                    </form>
+                    <hr style="height:11pt; visibility:hidden;" />
+
+                    <center>
+
+                        <a href="tel:022-734-15-23" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Appellez-nous</a>
+
+                    </center>
+
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <img src="img/calcul/map.svg" class="d-block" style="width:80%" alt="geneva" class="center">
+                    </div>
+
+                    </div>
+                </div>
     </section>
+
+
 
     <hr style="height:11pt; visibility:hidden;" />
 
@@ -221,112 +283,6 @@
 
     <!-- =======================  DESCRIPTION SECTION ======================= -->
 
-    <section id="price" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-7">
-                    <br><br>
-                    <video width="90%" autoplay="autoplay" muted="muted" loop="loop">
-                        <source src="img/video/video.webm" type="video/webm">
-                    </video>
-                </div>
-                <div class="col-lg-7 col-md-7 pull-right">
-                    <form action="" id="courseform" onsubmit="return doSomething();">
-                        <div>
-                            <div class="cont_order">
-                                <fieldset>
-                                    <legend></legend>
-                                    <label>Type de vélo:</label>
-                                    <label class='radiolabel'><input type="radio" name="selectedtype" value="simple"
-                                            onclick="calculateTotal()" />Simple</label>
-                                    <label class='radiolabel'><input type="radio" name="selectedtype" value="cargo"
-                                            onclick="calculateTotal()" />Cargo</label><br />
-                                    <br>
-
-                                    <label>Type de course:</label>
-                                    <label class='radiolabel'><input type="radio" name="selectedurg" value="rapide"
-                                            onclick="calculateTotal()" />Rapide (1 heure)</label>
-                                    <label class='radiolabel'><input type="radio" name="selectedurg" value="urgent"
-                                            onclick="calculateTotal()" />Urgent (30 minutes)</label><br />
-                                    <br>
-
-
-                                    <div class="form-row">
-                                        <div class="form-group">
-                                            <label for="fname">Pick up:</label>
-                                            <input type="number" name="pick" placeholder="Code Postale" min="1200" max="1299">
-                                            <!-- <input type="text" name="pick" placeholder="Code Postale" pattern="[0-9]{4}"> -->
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="fname">Destination:</label>
-                                            <input type="number" name="dest" placeholder="Code Postale" min="1200" max="1299">
-                                            <!-- <input type="text" name="dest" placeholder="Code Postale" pattern="[0-9]{4}"> -->
-                                        </div>
-                                    </div>
-
-
-                                    <br>
-
-
-                                    <label>Poids:</label>
-
-                                    <select id="poids" name='poids' onchange="calculateTotal()">
-                                        <option value="None">Choisir poids</option>
-                                        <option value="0">0-2kg</option>
-                                        <option value="1">2-3kg</option>
-                                        <option value="2">3-4kg</option>
-                                        <option value="3">4-5kg</option>
-                                        <option value="4">5-6kg</option>
-                                        <option value="5">6-7kg</option>
-                                        <option value="6">>7kg</option>
-                                    </select>
-
-                                    <br><br>
-
-                                    <div class='submitWrapper'>
-                                        <input type="submit" value="Calculer!">
-                                        <div>
-                                            <!-- <br/>
-              <p>
-              <label for='includecandles' class="inlinelabel">Include Candles($5)</label>
-             <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" />
-             </p> -->
-
-                                            <!-- <p>
-              <label class="inlinelabel" for='includeinscription'>Include Inscription($20)</label>
-              <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
-              <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
-              </p> -->
-                                            <div class='totWrapper'>
-                                                <div id="totalPrice"></div>
-                                            </div>
-
-                                </fieldset>
-                                </div>
-                                </div>
-                                <!-- <div class="cont_details">
-            <fieldset>
-              <legend>Contact Details</legend>
-              <label for='name'>Name</label>
-              <input type="text" id="name" name='name' />
-              <br/>
-              <label for='address'>Address</label>
-              <input type="text" id="address" name='address' />
-              <br/>
-              <label for='phonenumber'>Phone Number</label>
-              <input type="text"  id="phonenumber" name='phonenumber'/>
-              <br/>
-              </fieldset>
-          </div> -->
-                                <!-- <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" /> -->
-                            </div>
-
-                    </form>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!--End of wrap-->
 
 
 

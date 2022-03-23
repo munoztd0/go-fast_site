@@ -332,7 +332,7 @@ function doSomething() {
     var TotPrice = ((getTypePrice() + getDistPrice()) * getUrgPrice()) + getPoidsPrice() //+ candlesPrice() + insciptionPrice();
     var divobj = document.getElementById('totalPrice');
     divobj.style.display = 'block';
-    divobj.innerHTML = "Prix  " + TotPrice + "  CHF";
+    divobj.innerHTML = "Prix:  " + TotPrice + "  CHF";
 
     return false;
 }

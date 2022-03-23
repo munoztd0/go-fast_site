@@ -77,7 +77,7 @@
     #wrap div#totalPrice {
         padding: 10px;
         font-weight: bold;
-        background-color: grey;
+        background-color: #69b3a2;
     }
     
     #wrap label.radiolabel {
@@ -268,7 +268,7 @@
     }
     
     div.totWrapper {
-        text-align: right;
+        text-align: left;
     }
     /*  */
     
@@ -393,4 +393,8 @@
         /* height: 10vh; */
         background-color: white;
         z-index: 999;
+    }
+    
+    .row>div {
+        margin: 5px 0;
     }
