@@ -87,13 +87,50 @@
 </head>
 
 <body id="page-top" onload='hideTotal()'>
-    <!-- Info Alert -->
-    <div class="alert alert-info mb-0 p-1 fade show">
-        <small>En cours de construction</small>
-    </div>
+
+
+
+
+    <!-- <hr style="height:11pt; visibility:hidden;" /> -->
+
+
+    <!-- =======================  LANDING SECTION ======================= -->
+
+
+    <header>
+
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <div class="overlay"></div>
+        <!-- Info Alert -->
+        <div class="alert alert-info mb-0 p-1 fade show">
+            <small>En cours de construction</small>
+        </div>
+
+        <!-- <br><br><br>  -->
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/video/part1.webm" type="video/webm">
+        </video>
+
+        <!-- The header content -->
+        <div class="container h-100">
+
+
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+
+                    <h1 class="display-3">Go-Fast Cyclomessagerie</h1>
+                    <p class="lead mb-0">La cyclomessagerie locale et solidaire faite par et pour les coursier.ère.s</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-top" id="mainNav">
         <div class="container">
             <a class="js-scroll-trigger" href="#page-top">
                 <i class="icon-Asset-17 home-icon "></i>
@@ -103,9 +140,9 @@
                 <!-- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Go-Fast Cyclomessagerie -->
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
@@ -136,31 +173,26 @@
         </div>
     </nav>
 
-    <hr style="height:11pt; visibility:hidden;" />
+    <div id="sticky" class="wrapper">
+        <div class="marquee">
 
+            <p>
+                /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp LUN-VEN: 8h-18h &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Mail: <a href="mailto:info@go-fast.ch">info@go-fast.ch</a> &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Tel: <a href="tel:022-734-15-23">022-734-15-23</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Instagram:
+                <a href="https://www.instagram.com/gofast_cyclo/">
+                    <i class="fa fa-instagram" style="color: #69b3a2"></i> gofast_cyclo</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Adresse: 18 Rue de Montbrillant, 1201 Genève &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp
+            </p>
+            <p>
+                /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp LUN-VEN: 8h-18h &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Mail: <a href="mailto:info@go-fast.ch">info@go-fast.ch</a> &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Tel: <a href="tel:022-734-15-23">022-734-15-23</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Instagram:
+                <a href="https://www.instagram.com/gofast_cyclo/">
+                    <i class="fa fa-instagram" style="color: #69b3a2"></i> gofast_cyclo</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp /// &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Adresse: 18 Rue de Montbrillant, 1201 Genève &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp
+            </p>
 
-    <!-- =======================  LANDING SECTION ======================= -->
-
-    <header>
-
-        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-        <div class="overlay"></div>
-        <br><br><br>
-        <!-- The HTML5 video element that will create the background video on the header -->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="img/video/part1.webm" type="video/webm">
-    </video>
-
-        <!-- The header content -->
-        <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                    <h1 class="display-3">Go-Fast Cyclomessagerie</h1>
-                    <p class="lead mb-0">La cyclomessagerie locale et solidaire faite par et pour les coursier.ère.s</p>
-                </div>
-            </div>
         </div>
-    </header>
+    </div>
 
 
 
@@ -174,7 +206,8 @@
                 </div>
 
                 <div class="col-lg-5 col-md-5">
-                    <a href="#price" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Calculer votre prix</a>
+                    <a href="#price" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Calculer votre
+                        prix</a>
                 </div>
 
             </div>
@@ -194,8 +227,8 @@
                 <div class="col-lg-5 col-md-7">
                     <br><br>
                     <video width="90%" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="img/video/video.webm" type="video/webm">
-      </video>
+                        <source src="img/video/video.webm" type="video/webm">
+                    </video>
                 </div>
                 <div class="col-lg-7 col-md-7 pull-right">
                     <form action="" id="courseform" onsubmit="return doSomething();">
@@ -204,13 +237,17 @@
                                 <fieldset>
                                     <legend></legend>
                                     <label>Type de vélo:</label>
-                                    <label class='radiolabel'><input type="radio"  name="selectedtype" value="simple" onclick="calculateTotal()" />Simple</label>
-                                    <label class='radiolabel'><input type="radio"  name="selectedtype" value="cargo" onclick="calculateTotal()" />Cargo</label><br/>
+                                    <label class='radiolabel'><input type="radio" name="selectedtype" value="simple"
+                                            onclick="calculateTotal()" />Simple</label>
+                                    <label class='radiolabel'><input type="radio" name="selectedtype" value="cargo"
+                                            onclick="calculateTotal()" />Cargo</label><br />
                                     <br>
 
                                     <label>Type de course:</label>
-                                    <label class='radiolabel'><input type="radio"  name="selectedurg" value="rapide" onclick="calculateTotal()" />Rapide (1 heure)</label>
-                                    <label class='radiolabel'><input type="radio"  name="selectedurg" value="urgent" onclick="calculateTotal()" />Urgent (30 minutes)</label><br/>
+                                    <label class='radiolabel'><input type="radio" name="selectedurg" value="rapide"
+                                            onclick="calculateTotal()" />Rapide (1 heure)</label>
+                                    <label class='radiolabel'><input type="radio" name="selectedurg" value="urgent"
+                                            onclick="calculateTotal()" />Urgent (30 minutes)</label><br />
                                     <br>
 
 
@@ -234,14 +271,14 @@
                                     <label>Poids:</label>
 
                                     <select id="poids" name='poids' onchange="calculateTotal()">
-                                    <option value="None">Choisir poids</option>
-                                    <option value="0">0-2kg</option>
-                                    <option value="1">2-3kg</option>
-                                    <option value="2">3-4kg</option>
-                                    <option value="3">4-5kg</option>
-                                    <option value="4">5-6kg</option>
-                                    <option value="5">6-7kg</option>
-                                    <option value="6">>7kg</option>
+                                        <option value="None">Choisir poids</option>
+                                        <option value="0">0-2kg</option>
+                                        <option value="1">2-3kg</option>
+                                        <option value="2">3-4kg</option>
+                                        <option value="3">4-5kg</option>
+                                        <option value="4">5-6kg</option>
+                                        <option value="5">6-7kg</option>
+                                        <option value="6">>7kg</option>
                                     </select>
 
                                     <br><br>
@@ -323,7 +360,8 @@
                                 </div>
                                 <div class="col-lg-3 text-center">
                                     <br>
-                                    <a data-toggle="modal" href="#cargo" style="text-decoration: none;"><i class="icon-cargo icon-4x services-cargo"></i></a>
+                                    <a data-toggle="modal" href="#cargo" style="text-decoration: none;"><i
+                                        class="icon-cargo icon-4x services-cargo"></i></a>
                                     <a data-toggle="modal" href="#cargo">
                                         <br><br>
                                         <h4>Course cargo</h4>
@@ -575,8 +613,9 @@
     <footer>
         <!--Copyright-->
         <div class="footer-copyright py-3">
-            <small> Made with love by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i class="fa fa-github"></i>
-      </a> </small>
+            <small> Made with love by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i
+                        class="fa fa-github"></i>
+                </a> </small>
 
             <!--/github account-->
         </div>
@@ -600,8 +639,8 @@
                 <div class="modal-dialog h-100">
                     <div class="modal-content">
                         <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-         </span>
+                            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+                        </span>
                         <!-- <div class="close-modal" data-dismiss="modal">
             <div class="lr">
               <div class="rl"></div>
@@ -627,7 +666,8 @@
                                                         <th>Livraison</th>
                                                         <th>À partir de<sup><span style="font-size:0.5em">*</sup></span>
                                                         </th>
-                                                        <th>Livraison garantie avant<sup><span style="font-size:0.5em">**</sup></span>
+                                                        <th>Livraison garantie avant<sup><span
+                                                                    style="font-size:0.5em">**</sup></span>
                                                         </th>
                                                     </tr>
                                                 </thead>
@@ -656,23 +696,27 @@
 
                                             <h6 style="max-width: 500px" class="text-md-left">Suppléments</h6>
                                             <small>
-                    <ul style="max-width: 500px" class="text-md-left">
-                    <li> Poids: Supplément de 5.00 CHF par kg dès le 2ème kg.
-                      </li>
-                      <li>
-                        Attente (démarches administratives ou autre): Supplément de 1.00 CHF par
-                        minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
-                        soit présent à l'arrivée du/de la coursier.ère.
-                  </li>
-                  </ul>
-                   </small>
+                                                <ul style="max-width: 500px" class="text-md-left">
+                                                    <li> Poids: Supplément de 5.00 CHF par kg dès le 2ème kg.
+                                                    </li>
+                                                    <li>
+                                                        Attente (démarches administratives ou autre): Supplément de 1.00
+                                                        CHF par
+                                                        minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre
+                                                        contact
+                                                        soit présent à l'arrivée du/de la coursier.ère.
+                                                    </li>
+                                                </ul>
+                                            </small>
 
                                             <p style="max-width: 500px" class="text-md-left">
-                                                <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne 
-                        les livraisons de/vers le centre de Genève. Autres prix et destinations sur demande.</span>
+                                                <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne
+                                                    les livraisons de/vers le centre de Genève. Autres prix et
+                                                    destinations sur demande.</span>
                                                 <br>
-                                                <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps commence à partir de 
-                      l'heure à laquelle la livraison est prête.</span>
+                                                <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps
+                                                    commence à partir de
+                                                    l'heure à laquelle la livraison est prête.</span>
                                             </p>
 
 
@@ -696,8 +740,8 @@
                 <div class="modal-dialog h-100">
                     <div class="modal-content">
                         <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-         </span>
+                            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+                        </span>
                         <!-- <div class="close-modal" data-dismiss="modal">
             <div class="lr">
               <div class="rl"></div>
@@ -723,7 +767,8 @@
                                                         <th>Livraison</th>
                                                         <th>À partir de<sup><span style="font-size:0.5em">*</sup></span>
                                                         </th>
-                                                        <th>Livraison garantie avant<sup><span style="font-size:0.5em">**</sup></span>
+                                                        <th>Livraison garantie avant<sup><span
+                                                                    style="font-size:0.5em">**</sup></span>
                                                         </th>
                                                     </tr>
                                                 </thead>
@@ -753,21 +798,25 @@
 
                                             <h6 style="max-width: 500px" class="text-md-left">Suppléments</h6>
                                             <small>
-                    <ul style="max-width: 500px" class="text-md-left">
-                      <li>
-                        Attente (démarches administratives ou autre): Supplément de 1.00 CHF par
-                    minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre contact 
-                    soit présent à l'arrivée du/de la coursier.ère.
-                  </li>
-                  </ul>
-                   </small>
+                                                <ul style="max-width: 500px" class="text-md-left">
+                                                    <li>
+                                                        Attente (démarches administratives ou autre): Supplément de 1.00
+                                                        CHF par
+                                                        minute dès la 5ème minute. Assurez-vous d'être prêt ou que votre
+                                                        contact
+                                                        soit présent à l'arrivée du/de la coursier.ère.
+                                                    </li>
+                                                </ul>
+                                            </small>
 
                                             <p style="max-width: 500px" class="text-md-left">
-                                                <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne 
-                        les livraisons de/vers le centre de Genève. Autres prix et destinations sur demande.</span>
+                                                <span style="font-size:0.5em"><sup>*</sup> Le prix minimum concerne
+                                                    les livraisons de/vers le centre de Genève. Autres prix et
+                                                    destinations sur demande.</span>
                                                 <br>
-                                                <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps commence à partir de 
-                      l'heure à laquelle la livraison est prête.</span>
+                                                <span style="font-size:0.5em"><sup>**</sup> Le décompte du temps
+                                                    commence à partir de
+                                                    l'heure à laquelle la livraison est prête.</span>
                                             </p>
 
 
@@ -791,8 +840,8 @@
                 <div class="modal-dialog h-100">
                     <div class="modal-content">
                         <span class="btn_close">
-              <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-           </span>
+                            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+                        </span>
                         <!-- <div class="close-modal" data-dismiss="modal">
               <div class="lr">
                 <div class="rl"></div>
