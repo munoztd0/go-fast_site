@@ -252,6 +252,7 @@
     
     .form-row {
         display: flex;
+        width: 100%;
     }
     
     .form-group {
@@ -397,4 +398,23 @@
     
     .row>div {
         margin: 5px 0;
+    }
+    /* search bar */
+    
+    #geocoder {
+        z-index: 1;
+        margin: 20px;
+    }
+    
+    .mapboxgl-ctrl-geocoder {
+        width: 100%;
+    }
+    /* button */
+    
+    select {
+        font-family: "Arial", sans-serif !important
+    }
+    
+    option {
+        font-family: "Arial", sans-serif !important
     }
