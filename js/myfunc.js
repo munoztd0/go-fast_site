@@ -239,19 +239,21 @@ function getTypePrice() {
     //Get a reference to the form id="cakeform"
     var theForm = document.forms["courseform"];
     //Get a reference to the course the user Chooses name=selectedtype":
-    var selectedType = theForm.elements["selectedtype"];
+    var selectedType = theForm.elements["inputGroupSelect01"];
+
     // var selectedType theForm.elements["selectedtype"];
     //We loop through each radio buttons
     for (var i = 0; i < selectedType.length; i++) {
         //if the radio button is checked
-        if (selectedType[i].checked) {
+        if (i == selectedType.selectedIndex) {
             //we set TypePrice to the value of the selected radio button
             //by using the type_course array
             //We get the selected Items value
             //For example type_course["simple".value]"
-            typePrice = type_course[selectedType[i].value];
-            //If we get a match then we break out of this loop
-            //No reason to continue if we get a match
+            //typePrice = type_course[selectedType[i].value];
+            typePrice = type_course[selectedType[i].value]
+                //If we get a match then we break out of this loop
+                //No reason to continue if we get a match
             break;
         }
     }
@@ -269,11 +271,11 @@ function getUrgPrice() {
     //Get a reference to the form id="courseform"
     var theForm = document.forms["courseform"];
     //Get a reference to the course the user Chooses name=selectedurg":
-    var selectedUrg = theForm.elements["selectedurg"];
+    var selectedUrg = theForm.elements["inputGroupSelect02"];
     //We loop through each radio buttons
     for (var i = 0; i < selectedUrg.length; i++) {
         //if the radio button is checked
-        if (selectedUrg[i].checked) {
+        if (i == selectedUrg.selectedIndex) {
             //we set UrgPrice to the value of the selected radio button
             //by using the type_course array
             //We get the selected Items value
@@ -287,15 +289,38 @@ function getUrgPrice() {
     return UrgPrice;
 }
 
+function sortByProperty(property) {
+    return function(a, b) {
+        if (a[property] > b[property])
+            return 1;
+        else if (a[property] < b[property])
+            return -1;
+
+        return 0;
+    }
+}
+
 //This function finds the poids price based on the 
 //drop down selection
 function getDistPrice() {
     //Get a reference to the form id="courseform"
-    var pickup = parseInt(courseform.elements.namedItem("pick").value);
-    var destin = parseInt(courseform.elements.namedItem("dest").value);
+    //var pickup = parseInt(courseform.elements.namedItem("pick").value);
+    //var pickup = parseInt(pick);
+    if (pickup1.lastSelected != null) {
+        var pickup = JSON.parse(pickup1.lastSelected).context.sort(sortByProperty("text_en-US"))
+        var pickup = parseInt(pickup[0].text)
+    }
+    //var destin = parseInt(courseform.elements.namedItem("dest").value);
+    //var destin = parseInt(deliver);
 
-    let idx1 = 0
-    let idx2 = 0
+    if (delivery.lastSelected != null) {
+        var destin = JSON.parse(delivery.lastSelected).context.sort(sortByProperty("text_en-US"))
+        var destin = parseInt(destin[0].text)
+    }
+
+
+    let idx1 = 0;
+    let idx2 = 0;
 
     if (zone1.indexOf(pickup) >= 0) { idx1 = 0 } else if (zone2.indexOf(pickup) >= 0) { idx1 = 1 } else if (zone3.indexOf(pickup) >= 0) { idx1 = 2 } else if (zone4.indexOf(pickup) >= 0) { idx1 = 3 } else if (zone5.indexOf(pickup) >= 0) { idx1 = 4 } else if (zone6.indexOf(pickup) >= 0) { idx1 = 5 } else if (zone7.indexOf(pickup) >= 0) { idx1 = 6 } else if (zone8.indexOf(pickup) >= 0) { idx1 = 7 } else if (zone9.indexOf(pickup) >= 0) { idx1 = 8 } else if (zone10.indexOf(pickup) >= 0) { idx1 = 9 } else if (zone11.indexOf(pickup) >= 0) { idx1 = 10 } else if (zone12.indexOf(pickup) >= 0) { idx1 = 11 } else { idx1 = null }
 
@@ -317,7 +342,7 @@ function getPoidsPrice() {
     //Get a reference to the form id="courseform"
     var theForm = document.forms["courseform"];
     //Get a reference to the select id="poids"
-    var selectedPoids = theForm.elements["poids"];
+    var selectedPoids = theForm.elements["inputGroupSelect03"];
 
     //set Poids Price equal to value user chose
     PoidsPrice = poids_prices[selectedPoids.value];
@@ -357,6 +382,53 @@ function hideTotal() {
 // stop mqruee on scroll
 $('#maindiv').width($('#div1').width());
 
+
+
+function init() {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: {
+            lat: 12.9715987,
+            lng: 77.59456269999998
+        },
+        zoom: 12
+    });
+
+
+    var searchBox = new google.maps.places.SearchBox(document.getElementById('pac-input'));
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(document.getElementById('pac-input'));
+    google.maps.event.addListener(searchBox, 'places_changed', function() {
+        searchBox.set('map', null);
+
+
+        var places = searchBox.getPlaces();
+
+        var bounds = new google.maps.LatLngBounds();
+        var i, place;
+        for (i = 0; place = places[i]; i++) {
+            (function(place) {
+                var marker = new google.maps.Marker({
+
+                    position: place.geometry.location
+                });
+                marker.bindTo('map', searchBox, 'map');
+                google.maps.event.addListener(marker, 'map_changed', function() {
+                    if (!this.getMap()) {
+                        this.unbindAll();
+                    }
+                });
+                bounds.extend(place.geometry.location);
+
+
+            }(place));
+
+        }
+        map.fitBounds(bounds);
+        searchBox.set('map', map);
+        map.setZoom(Math.min(map.getZoom(), 12));
+
+    });
+}
+//google.maps.event.addDomListener(window, 'load', init);
 
 
 

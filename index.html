@@ -54,6 +54,13 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
+    <!-- Search bar -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
 
 
 
@@ -191,58 +198,152 @@
 
         </div>
     </div>
+    <style>
+        #geocoder {
+            z-index: 1;
+            margin: 20px;
+        }
+        
+        .mapboxgl-ctrl-geocoder {
+            width: 100%;
+        }
+    </style>
 
     <section id="price" class="bg-white">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-8 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <form style="border:1px solid black" action="" id="courseform" onsubmit="return doSomething();">
                         <div class="cont_order">
                             <fieldset>
                                 <legend></legend>
-                                <label>Type de vélo:</label>
-                                <label class='radiolabel'><input type="radio" name="selectedtype" value="simple"
-                                    onclick="calculateTotal()" />Simple</label>
-                                <label class='radiolabel'><input type="radio" name="selectedtype" value="cargo"
-                                    onclick="calculateTotal()" />Cargo</label><br />
+
+                                <div>
+                                    <div id="geocoder1"></div>
+                                    <pre id="result1"></pre>
+
+                                    <script>
+                                        mapboxgl.accessToken = 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg';
+                                        const geocoder1 = new MapboxGeocoder({
+                                            accessToken: mapboxgl.accessToken,
+                                            types: 'region,place,postcode,locality, address',
+                                            placeholder: 'Pickup', // Placeholder text for the search bar
+                                            bbox: [5.886955, 46.119093, 6.409492, 46.286137], // Boundary for Berkeley
+                                            proximity: {
+                                                longitude: 6.1432,
+                                                latitude: 46.212004
+                                            } // Coordinates of Geneva
+                                        });
+
+                                        geocoder1.addTo('#geocoder1');
+
+                                        // Get the geocoder results container.
+                                        const results1 = document.getElementById('result1');
+
+                                        // Add geocoder result to container.
+                                        var pickup1 = geocoder1.off('result1', (e) => {
+                                            results1.innerText = JSON.stringify(e.result1, null, 2);
+                                        });
+
+                                        if (pickup1.lastSelected != null) {
+                                            var pick = JSON.parse(pickup1.lastSelected).context[1].text
+                                        }
+
+
+                                        // Clear results container when search is cleared.
+                                        var pickup1 = geocoder1.on('clear', () => {
+                                            results1.innerText = '';
+                                        });
+                                    </script>
+
+                                </div>
+
+                                <div>
+                                    <div id="geocoder2"></div>
+                                    <pre id="result2"></pre>
+
+                                    <script>
+                                        mapboxgl.accessToken = 'pk.eyJ1IjoibXVub3p0ZDAiLCJhIjoiY2t2dGllMTNnYmN6YzMwczc1emMyNXpudiJ9.fXyP83eivbrDmspF75TBlg';
+                                        const geocoder2 = new MapboxGeocoder({
+                                            accessToken: mapboxgl.accessToken,
+                                            types: 'region,place,postcode,locality, address',
+                                            placeholder: 'Destination', // Placeholder text for the search bar
+                                            bbox: [5.886955, 46.119093, 6.409492, 46.286137], // Boundary for Berkeley
+                                            proximity: {
+                                                longitude: 6.1432,
+                                                latitude: 46.212004
+                                            } // Coordinates of Geneva
+                                        });
+
+                                        geocoder2.addTo('#geocoder2');
+
+                                        // Get the geocoder results container.
+                                        const results2 = document.getElementById('result2');
+
+                                        // Add geocoder result to container.
+                                        var delivery = geocoder2.off('result2', (e) => {
+                                            results2.innerText = JSON.stringify(e.result2, null, 2);
+                                        });
+
+                                        if (delivery.lastSelected != null) {
+                                            var deliver = JSON.parse(delivery.lastSelected).context[1].text
+                                        }
+
+
+                                        // Clear results container when search is cleared.
+                                        var delivery = geocoder2.on('clear', () => {
+                                            results2.innerText = '';
+                                        });
+                                    </script>
+
+
+                                </div>
+
                                 <br>
 
-                                <label>Type de course:</label>
-                                <label class='radiolabel'><input type="radio" name="selectedurg" value="rapide"
-                                    onclick="calculateTotal()" />Rapide (1 heure)</label>
-                                <label class='radiolabel'><input type="radio" name="selectedurg" value="urgent"
-                                    onclick="calculateTotal()" />Urgent (30 minutes)</label><br />
-                                <br>
-
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="fname">Pick up:</label>
-                                        <input type="number" name="pick" placeholder="Code Postale" min="1200" max="1299">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Type de course</label>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="fname">Destination:</label>
-                                        <input type="number" name="dest" placeholder="Code Postale" min="1200" max="1299">
-
-                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                      <option selected>Choisir...</option>
+                                      <option value="simple">Simple</option>
+                                      <option value="cargo">Cargo</option>
+                                    </select>
                                 </div>
 
 
                                 <br>
 
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect02">Urgence</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                      <option selected>Choisir...</option>
+                                      <option value="rapide">Rapide (1 heure)</option>
+                                      <option value="urgent">Urgent (30 min)</option>
+                                    </select>
+                                </div>
+                                <br>
 
-                                <label>Poids:</label>
 
-                                <select id="poids" name='poids' onchange="calculateTotal()">
-                                <option value="None">Choisir poids</option>
-                                <option value="0">0-2kg</option>
-                                <option value="1">2-3kg</option>
-                                <option value="2">3-4kg</option>
-                                <option value="3">4-5kg</option>
-                                <option value="4">5-6kg</option>
-                                <option value="5">6-7kg</option>
-                                <option value="6">>7kg</option>
-                            </select>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect03">Poids</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect03">
+                                      <option selected>Seulement pour course simple...</option>
+                                      <option value="0">0-2kg</option>
+                                      <option value="1">2-3kg</option>
+                                      <option value="2">3-4kg</option>
+                                      <option value="3">4-5kg</option>
+                                      <option value="4">5-6kg</option>
+                                      <option value="5">6-7kg</option>
+                                      <option value="6">>7kg</option>
+                                    </select>
+                                </div>
+
 
                                 <br><br>
 
@@ -268,6 +369,7 @@
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <img src="img/calcul/map.svg" class="d-block" style="width:80%" alt="geneva" class="center">
+
                     </div>
 
                     </div>
@@ -572,7 +674,7 @@
             <small> Made with love by <em>David Munoz Tord </em> <a href="https://github.com/munoztd0"> <i
                         class="fa fa-github"></i>
                 </a> </small>
-
+            <hr style="height:11pt; visibility:hidden;" />
             <!--/github account-->
         </div>
 
