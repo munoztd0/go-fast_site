@@ -327,7 +327,7 @@ function getDistPrice() {
     if (zone1.indexOf(destin) >= 0) { idx2 = 1 } else if (zone2.indexOf(destin) >= 0) { idx2 = 2 } else if (zone3.indexOf(destin) >= 0) { idx2 = 3 } else if (zone4.indexOf(destin) >= 0) { idx2 = 4 } else if (zone5.indexOf(destin) >= 0) { idx2 = 5 } else if (zone6.indexOf(destin) >= 0) { idx2 = 6 } else if (zone7.indexOf(destin) >= 0) { idx2 = 7 } else if (zone8.indexOf(destin) >= 0) { idx2 = 8 } else if (zone9.indexOf(destin) >= 0) { idx2 = 9 } else if (zone10.indexOf(destin) >= 0) { idx2 = 10 } else if (zone11.indexOf(destin) >= 0) { idx2 = 11 } else if (zone12.indexOf(destin) >= 0) { idx2 = 12 } else { idx2 = null }
 
 
-    //set Poids Price equal to value user chose
+    //set Poid Price equal to value user chose
     DistPrice = data[idx1][idx2];
 
     //finally we return DistPrice
