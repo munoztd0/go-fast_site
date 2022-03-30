@@ -36,7 +36,6 @@
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/css/bootstrap.css" crossorigin="anonymous">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -46,9 +45,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+
 
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -59,9 +56,11 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css"> -->
 
-
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
 
     <!-- load special icons -->
@@ -193,6 +192,8 @@
         </div>
     </div>
 
+
+
     <section id="price" class="bg-white">
         <div class="container-fluid">
             <div class="row">
@@ -202,7 +203,7 @@
                             <fieldset>
                                 <legend></legend>
 
-                                <div>
+                                <div class="flex-container">
                                     <div id="geocoder1"></div>
                                     <pre id="result1"></pre>
 
@@ -913,14 +914,6 @@
 
     <!-- CALC -->
     <script type="text/javascript" src="js/myfunc.js"></script>
-
-    <!-- Load d3.js -->
-    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
-
-
-    <!-- caorusle plugins -->
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/js/bootstrap.js" crossorigin="anonymous"></script>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
