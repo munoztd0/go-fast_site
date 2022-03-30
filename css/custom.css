@@ -729,3 +729,10 @@
             font-size: 11px !important;
         }
     }
+    
+    input[type=submit] {
+        background: #69b3a2;
+        font-family: "Arial", sans-serif !important;
+        border-radius: 15px;
+        padding: 10px;
+    }
