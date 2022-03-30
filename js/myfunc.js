@@ -383,7 +383,7 @@ function hideTotal() {
 $('#maindiv').width($('#div1').width());
 
 
-
+// search box
 function init() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         center: {
@@ -428,35 +428,3 @@ function init() {
 
     });
 }
-//google.maps.event.addDomListener(window, 'load', init);
-
-
-
-// function highlight_map_states() {
-
-//     if ($(".states_section").size() > 0) {
-
-//         $(".states_section .list_states .item .link").hover(function () {
-//             var a = "#state_" + $(this).text().toLowerCase();
-//             $(a).attr("class", "state hover");
-//         }, function () {
-//             var a = "#state_" + $(this).text().toLowerCase();
-//             $(a).attr("class", "state")
-//         })
-//     }
-// };
-
-// $(function() {
-//     var $tooltip = $('.tooltip');
-
-//     $('path, circle').click(function(e){
-//         e.preventDefault();
-//         var t = this.getBoundingClientRect().top,
-//             l = this.getBoundingClientRect().left;
-//         $tooltip.css({"top": t + "px", "left": l + "px"}).show();
-//     });
-
-//     $('desc, text').click(function(e){
-//         e.preventDefault();
-//     });
-// });

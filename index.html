@@ -135,14 +135,10 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-top sticky-top" id="mainNav">
         <div class="container-fluid">
             <a class="js-scroll-trigger" href="#page-top">
                 <i class="icon-Asset-17 home-icon "></i>
-            </a>
-            <a>
-                <i></i>
-                <!-- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Go-Fast Cyclomessagerie -->
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -159,9 +155,6 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="about.html">À propos</a>
                     </li>
-                    <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#colab">Collaboration</a>
-          </li> -->
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="team.html">Notre team</a>
                     </li>
@@ -177,6 +170,7 @@
             </li>
         </div>
     </nav>
+
 
     <div id="sticky" class="wrapper">
         <div class="marquee">
@@ -198,21 +192,11 @@
 
         </div>
     </div>
-    <style>
-        #geocoder {
-            z-index: 1;
-            margin: 20px;
-        }
-        
-        .mapboxgl-ctrl-geocoder {
-            width: 100%;
-        }
-    </style>
 
     <section id="price" class="bg-white">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-12 col-sm-12">
                     <form style="border:1px solid black" action="" id="courseform" onsubmit="return doSomething();">
                         <div class="cont_order">
                             <fieldset>
@@ -257,7 +241,7 @@
                                     </script>
 
                                 </div>
-                                <br><br>
+                                <br></br>
 
                                 <div>
                                     <div id="geocoder2"></div>
@@ -302,12 +286,12 @@
 
                                 <br>
 
-                                <div class="input-group mb-3">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <label class="input-group-text" for="inputGroupSelect01">Type de course</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01">
-                                      <option selected>Choisir...</option>
+                                      <option value="simple" selected>Choisir...</option>
                                       <option value="simple">Simple</option>
                                       <option value="cargo">Cargo</option>
                                     </select>
@@ -321,7 +305,7 @@
                                         <label class="input-group-text" for="inputGroupSelect02">Urgence</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect02">
-                                      <option selected>Choisir...</option>
+                                      <option value="rapide" selected>Choisir...</option>
                                       <option value="rapide">Rapide (1 heure)</option>
                                       <option value="urgent">Urgent (30 min)</option>
                                     </select>
@@ -334,7 +318,7 @@
                                         <label class="input-group-text" for="inputGroupSelect03">Poids</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect03">
-                                      <option selected>Seulement pour course simple...</option>
+                                      <option value="0" selected>Seulement pour course simple</option>
                                       <option value="0">0-2kg</option>
                                       <option value="1">2-3kg</option>
                                       <option value="2">3-4kg</option>
