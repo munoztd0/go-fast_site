@@ -129,25 +129,25 @@
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
                         <span class="label-input100">Votre Nom</span>
-                        <input class="input100" type="text" name="name">
+                        <input class="input100" type="text" name="name" required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Company name is required">
                         <span class="label-input100">Nom de l'entreprise</span>
-                        <input class="input100" type="text" name="company" placeholder="Nom qui sera sur votre facture">
+                        <input class="input100" type="text" name="company" required placeholder="Nom qui sera sur votre facture">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid phone number is required: 022-123-45-67">
                         <span class="label-input100">Téléphone</span>
-                        <input class="input100" type="text" name="phone">
+                        <input class="input100" type="text" name="phone" required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                         <span class="label-input100">Email</span>
-                        <input class="input100" type="text" name="email">
+                        <input class="input100" type="text" name="email" required>
                         <span class="focus-input100"></span>
                     </div>
 
@@ -155,7 +155,7 @@
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
                         <span class="label-input100">Nom du contact</span>
-                        <input class="input100" type="text" name="namePick">
+                        <input class="input100" type="text" name="namePick" required>
                         <span class="focus-input100"></span>
                     </div>
 
@@ -226,7 +226,7 @@
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
                         <span class="label-input100">Nom du contact</span>
-                        <input class="input100" type="text" name="nameDeli">
+                        <input class="input100" type="text" name="nameDeli" required>
                         <span class="focus-input100"></span>
                     </div>
 
@@ -291,17 +291,17 @@
                     </div>
 
 
-                    <span class="contact100-form-title"> Qu'est ce que nous devrions savoir de plus ?</span>
+                    <span class="contact100-form-title"> Que devrions-nous savoir de plus ?</span>
 
                     <div class="wrap-input100 rs1-wrap-input100">
                         <span class="label-input100">Poids</span>
-                        <input class="input100" type="text" name="poids">
+                        <input class="input100" type="text" name="poids" required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 rs1-wrap-input100">
                         <span class="label-input100">Dimensions (Longueur, Largeur et Hauteur)</span>
-                        <input class="input100" type="text" name="dimensions">
+                        <input class="input100" type="text" name="dimensions" required>
                         <span class="focus-input100"></span>
                     </div>
 
@@ -313,14 +313,14 @@
 
 
                     <div class="wrap-input100 rs1-wrap-input100">
-                        <span class="label-input100">Heure de pickup</span>
-                        <input class="form-control" type="text" name="timePick" id="datetimePick">
+                        <span class="label-input100">Prêt à partir de </span>
+                        <input class="form-control" type="text" name="timePick" id="datetimePick" required>
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 rs1-wrap-input100">
-                        <span class="label-input100">Heure de livraison (min 30 min)</span>
-                        <input class="form-control" type="text" name="timeDeli" id="datetimeDeli">
+                        <span class="label-input100">Heure de livraison maximum souhaitée (min 30 min)</span>
+                        <input class="form-control" type="text" name="timeDeli" id="datetimeDeli" required>
                         <span class="focus-input100"></span>
                     </div>
 
@@ -329,14 +329,13 @@
 
                     <div class="wrap-input100 rs1-wrap-input100">
                         <span class="label-input100">Date</span>
-                        <input class="form-control" type="text" name="date" id="dateID">
+                        <input class="form-control" type="text" name="date" id="dateID" required>
                         <span class="focus-input100"></span>
                     </div>
 
 
                     <div class="wrap-input100 rs1-wrap-input100">
                         <span class="label-input100">Paiement  &nbsp   &nbsp </span>
-                        <input id="toggle-on" name="paiememt" value="facture" type="radio">
                         <label for="toggle-on">Facture</label>
                         <input id="toggle-off" name="paiememt" value="cash" type="radio">
                         <label for="toggle-off">Cash</label>
