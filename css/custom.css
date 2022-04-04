@@ -401,15 +401,6 @@
     .row>div {
         margin: 5px 0;
     }
-    /* button */
-    
-    select {
-        font-family: "Arial", sans-serif !important
-    }
-    
-    option {
-        font-family: "Arial", sans-serif !important
-    }
     /* test*/
     
     body {
@@ -436,6 +427,18 @@
         z-index: -1;
         width: 100%;
         /* max-width: 100px; */
+    }
+    
+    #geocoder3 {
+        /* margin: 20px; */
+        z-index: 99;
+        width: 100%;
+    }
+    
+    #geocoder4 {
+        /* margin: 20px; */
+        z-index: 99;
+        width: 100%;
     }
     
     .mapboxgl-ctrl-geocoder {
@@ -729,10 +732,90 @@
             font-size: 11px !important;
         }
     }
+    /* form */
     
     input[type=submit] {
-        background: #69b3a2;
-        font-family: "Arial", sans-serif !important;
+        background: #fb34c4;
+        font-family: sans-serif !important;
+        border-width: 0px;
         border-radius: 15px;
         padding: 10px;
+    }
+    
+    .form-header {
+        font-family: sans-serif !important;
+        background-color: #eff0f1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .form-header h6 {
+        font-family: sans-serif !important;
+        font-size: 20px;
+        text-align: center;
+        color: #666;
+        padding: 20px 0;
+        border-bottom: 1px solid #cccccc;
+    }
+    
+    .cont_order h5 {
+        font-family: sans-serif !important;
+        font-size: 16px;
+        text-align: center;
+        color: #666;
+    }
+    
+    .cont_order h6 {
+        font-family: sans-serif !important;
+        font-size: 16px;
+        text-align: left;
+        color: #fb34c4;
+    }
+    
+    .input-group-text {
+        font-family: sans-serif !important;
+        font-size: 14px;
+    }
+    
+    select {
+        font-family: sans-serif !important;
+        font-size: 14px;
+        padding: 12px 12px;
+        padding-bottom: 9px;
+    }
+    
+    option {
+        font-family: sans-serif !important;
+        font-size: 14px;
+        padding: 6px 12px;
+        padding-bottom: 9px;
+    }
+    /* test */
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    label {
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: 5px;
+        display: inline-block;
+    }
+    
+    input[type="radio"]:checked+label {
+        background-color: #fb34c4;
+        cursor: default;
+        color: #E6E6E6;
+    }
+    
+    input[type="radio"]:checked+label {
+        background-color: #fb34c4;
+        cursor: default;
+        color: #E6E6E6;
+    }
+    
+    pre {
+        background-color: transparent;
+        border-color: transparent;
     }

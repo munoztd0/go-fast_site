@@ -198,7 +198,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12">
-                    <form style="border:1px solid black" action="" id="courseform" onsubmit="return doSomething();">
+                    <form style="border:6px solid #fb34c4; border-radius:6px" action="" id="courseform" onsubmit="return doSomething();">
+                        <div class="form-header">
+                            <h6>Estimez le cout de votre livraison!</h6>
+                        </div>
                         <div class="cont_order">
                             <fieldset>
                                 <legend></legend>
@@ -242,7 +245,7 @@
                                     </script>
 
                                 </div>
-                                <br></br>
+                                <hr style="height:10pt; visibility:hidden;" />
 
                                 <div>
                                     <div id="geocoder2"></div>
@@ -285,40 +288,42 @@
 
                                 </div>
 
-                                <br>
 
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">Type de course</label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Type de course</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
                                       <option value="simple" selected>Choisir...</option>
                                       <option value="simple">Simple</option>
                                       <option value="cargo">Cargo</option>
                                     </select>
-                                </div>
+                                        </div>
 
 
-                                <br>
 
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect02">Urgence</label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect02">
+
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect02">Urgence</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect02">
                                       <option value="rapide" selected>Choisir...</option>
                                       <option value="rapide">Rapide (1 heure)</option>
                                       <option value="urgent">Urgent (30 min)</option>
                                     </select>
-                                </div>
-                                <br>
+                                        </div>
 
 
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect03">Poids</label>
-                                    </div>
-                                    <select class="custom-select" id="inputGroupSelect03">
+
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect03">Poids</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect03">
                                       <option value="0" selected>Seulement pour course simple</option>
                                       <option value="0">0-2kg</option>
                                       <option value="1">2-3kg</option>
@@ -328,22 +333,32 @@
                                       <option value="5">6-7kg</option>
                                       <option value="6">>7kg</option>
                                     </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>Estimation:</h5>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class='totWrapper'>
+                                            <h6 id="totalPrice"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class='submitWrapper'>
+                                            <input type="submit" value="Calculer !">
+                                        </div>
+                                    </div>
                                 </div>
 
 
-                                <br><br>
-
-                                <div class='submitWrapper'>
-                                    <input type="submit" value="Calculer !">
-                                    <br><br>
-                                    <div>
-
-                                        <div class='totWrapper'>
-                                            <div id="totalPrice"></div>
-                                        </div>
 
                             </fieldset>
-                            </div>
+                        </div>
                     </form>
                     <hr style="height:11pt; visibility:hidden;" />
 
@@ -353,14 +368,14 @@
 
                     </center>
 
-                    </div>
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-                        <img src="img/calcul/map.svg" class="d-block" style="width:80%" alt="geneva" class="center">
-
-                    </div>
-
-                    </div>
                 </div>
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <img src="img/calcul/map.svg" class="d-block" style="width:80%" alt="geneva" class="center">
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
@@ -389,7 +404,7 @@
                 <div class="col-lg-12 text-center" style="padding-bottom: 3%">
 
                     <br><br>
-                    <p style="display:inline; font-size: 35px">Nos services en bref</p>
+                    <p style="display:inline; font-size: 35px">Nos services</p>
                     <p>
                         <br>
 
