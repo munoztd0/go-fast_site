@@ -1,4 +1,2 @@
-*.html linguist-vendored
-vendor/*.js linguist-vendored
-js/*.js linguist-vendored
-*.js linguist-vendored
+*.html linguist-detectable=false
+*.js linguist-detectable=false
