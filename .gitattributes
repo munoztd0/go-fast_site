@@ -1,2 +1,3 @@
 *.html linguist-vendored
 vendor/*.js linguist-vendored
+js/*.js linguist-vendored
