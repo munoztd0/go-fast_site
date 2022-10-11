@@ -196,10 +196,10 @@
     }
     /* carousel */
     
-    img {
+    /* img {
         width: 50%;
         margin: auto;
-    }
+    } */
     /* flip card */
     
     .flip-card {
@@ -819,3 +819,40 @@
         background-color: transparent;
         border-color: transparent;
     }
+
+
+    /* carousel  */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-left: 0;
+    margin-right: 35%;
+    margin-left: 0%;
+    list-style: none;
+    /* left: -150px; horizontal position */
+}
+
+    .carousel-indicators > li,
+    .carousel-indicators > li.active{
+        width: 100px; 
+        /* height: 25px; */
+        /* border-radius: 0; */
+        /* border: solid 1px grey; */
+        background: #ccc !important;
+        text-indent: 0
+        /* text-indent: -1;
+        align-content: center!important;
+        justify-content: center!important;
+        text-align: center; */
+        
+    }
+    .carousel-indicators > li.active {
+        background: #000 !important;
+    }
+
