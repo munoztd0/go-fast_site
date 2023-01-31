@@ -118,7 +118,7 @@
 
         <!-- <br><br><br>  -->
         <!-- The HTML5 video element that will create the background video on the header -->
-        <script>
+        <!-- <script>
 
         $(function() {
         if (window.navigator.userAgent.indexOf('iPhone') != -1) {
@@ -133,13 +133,24 @@
         });
 
 
-        </script>
-
+        </script> -->
+    <div style="position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);">
         <video id="homescreen" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="img/video/part1.webm" type="video/webm" style="display:none;">
         </video>
-
-        <img id="safari" src="img/video/background.png" width="100%" style="display:none;">  
+    </div>
+        <!-- <img id="safari" src="img/video/background.png" width="100%" style="display:none;">   -->
 
 
         <!-- The header content -->
