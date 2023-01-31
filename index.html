@@ -118,9 +118,29 @@
 
         <!-- <br><br><br>  -->
         <!-- The HTML5 video element that will create the background video on the header -->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="img/video/part1.webm" type="video/webm">
+        <script>
+
+        $(function() {
+        if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+            if (window.navigator.standalone) {
+            $('#homescreen').show();          
+            }else{
+            $('#safari').show();
+            }
+        }else{
+            $("#safari").show();
+        }
+        });
+
+
+        </script>
+
+        <video id="homescreen" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/video/part1.webm" type="video/webm" style="display:none;">
         </video>
+
+        <img id="safari" src="img/video/background.png" width="100%" style="display:none;">  
+
 
         <!-- The header content -->
         <div class="container h-100">
